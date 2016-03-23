@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FD2C1921CA28ECE0063351F /* MonthPickerOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD2C1911CA28ECE0063351F /* MonthPickerOnlyViewController.swift */; };
+		2FD2C19A1CA2AA520063351F /* PagingDatePickerOnlyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD2C1991CA2AA520063351F /* PagingDatePickerOnlyViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		D27D388B0E3700ED50A8C9FE /* Pods_PagingDatePicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91209BF75B2DA06A71BA3BBA /* Pods_PagingDatePicker_Example.framework */; };
+		EE7BA8870FD177D0EF970E88 /* Pods_PagingDatePicker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEB869786C3DA8F325C8E995 /* Pods_PagingDatePicker_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,19 +29,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1478B71AAB2DDC5D156380A2 /* Pods-PagingDatePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagingDatePicker_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PagingDatePicker_Tests/Pods-PagingDatePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2FD2C1911CA28ECE0063351F /* MonthPickerOnlyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthPickerOnlyViewController.swift; sourceTree = "<group>"; };
+		2FD2C1991CA2AA520063351F /* PagingDatePickerOnlyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingDatePickerOnlyViewController.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* PagingDatePicker_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PagingDatePicker_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* PagingDatePicker_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagingDatePicker_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		8312A01DBCE12A60C7DFCB59 /* PagingDatePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = PagingDatePicker.podspec; path = ../PagingDatePicker.podspec; sourceTree = "<group>"; };
+		6D1BC430222DDB4258EC5177 /* Pods-PagingDatePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagingDatePicker_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PagingDatePicker_Tests/Pods-PagingDatePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		78BDB251F9F510C07C976EA9 /* Pods-PagingDatePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagingDatePicker_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-PagingDatePicker_Example/Pods-PagingDatePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8312A01DBCE12A60C7DFCB59 /* PagingDatePicker.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PagingDatePicker.podspec; path = ../PagingDatePicker.podspec; sourceTree = "<group>"; };
+		91209BF75B2DA06A71BA3BBA /* Pods_PagingDatePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PagingDatePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4F851EB629C15D409444E6A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		DF332EB73107D47382CDAB05 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AD026FCA6B67E14D3B502C26 /* Pods-PagingDatePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PagingDatePicker_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PagingDatePicker_Example/Pods-PagingDatePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BEB869786C3DA8F325C8E995 /* Pods_PagingDatePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PagingDatePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF332EB73107D47382CDAB05 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27D388B0E3700ED50A8C9FE /* Pods_PagingDatePicker_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE7BA8870FD177D0EF970E88 /* Pods_PagingDatePicker_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +78,8 @@
 				607FACD21AFB9204008FA782 /* Example for PagingDatePicker */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
+				E70A5D2141C25D3F6479F3DA /* Pods */,
+				DFCA5F16B59BD8DC43343AA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,11 +96,12 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				2FD2C1911CA28ECE0063351F /* MonthPickerOnlyViewController.swift */,
+				2FD2C1991CA2AA520063351F /* PagingDatePickerOnlyViewController.swift */,
 			);
 			name = "Example for PagingDatePicker";
 			path = PagingDatePicker;
@@ -127,6 +142,26 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		DFCA5F16B59BD8DC43343AA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91209BF75B2DA06A71BA3BBA /* Pods_PagingDatePicker_Example.framework */,
+				BEB869786C3DA8F325C8E995 /* Pods_PagingDatePicker_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E70A5D2141C25D3F6479F3DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD026FCA6B67E14D3B502C26 /* Pods-PagingDatePicker_Example.debug.xcconfig */,
+				78BDB251F9F510C07C976EA9 /* Pods-PagingDatePicker_Example.release.xcconfig */,
+				6D1BC430222DDB4258EC5177 /* Pods-PagingDatePicker_Tests.debug.xcconfig */,
+				1478B71AAB2DDC5D156380A2 /* Pods-PagingDatePicker_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "PagingDatePicker_Example" */;
 			buildPhases = (
+				E57E38860E824377A43C6FDE /* Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
+				72E9407C44B28A509AD016D4 /* Embed Pods Frameworks */,
+				425BF7AA5B6D00A7E1557F78 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "PagingDatePicker_Tests" */;
 			buildPhases = (
+				EBA1AD38E7AACA0BAF364308 /* Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
+				C2898C4DE9A5D9836D03B6A7 /* Embed Pods Frameworks */,
+				83B5F0EB880C6CF854E1D276 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -184,7 +225,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "PROJECT" */;
+			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "PagingDatePicker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -223,13 +264,107 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		425BF7AA5B6D00A7E1557F78 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PagingDatePicker_Example/Pods-PagingDatePicker_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72E9407C44B28A509AD016D4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PagingDatePicker_Example/Pods-PagingDatePicker_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83B5F0EB880C6CF854E1D276 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PagingDatePicker_Tests/Pods-PagingDatePicker_Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2898C4DE9A5D9836D03B6A7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PagingDatePicker_Tests/Pods-PagingDatePicker_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E57E38860E824377A43C6FDE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EBA1AD38E7AACA0BAF364308 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				2FD2C1921CA28ECE0063351F /* MonthPickerOnlyViewController.swift in Sources */,
+				2FD2C19A1CA2AA520063351F /* PagingDatePickerOnlyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +490,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD026FCA6B67E14D3B502C26 /* Pods-PagingDatePicker_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PagingDatePicker/Info.plist;
@@ -367,6 +503,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78BDB251F9F510C07C976EA9 /* Pods-PagingDatePicker_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = PagingDatePicker/Info.plist;
@@ -379,6 +516,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D1BC430222DDB4258EC5177 /* Pods-PagingDatePicker_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -399,6 +537,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1478B71AAB2DDC5D156380A2 /* Pods-PagingDatePicker_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -416,7 +555,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "PROJECT" */ = {
+		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "PagingDatePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACED1AFB9204008FA782 /* Debug */,

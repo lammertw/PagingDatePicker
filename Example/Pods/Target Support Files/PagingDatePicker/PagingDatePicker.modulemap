@@ -1,0 +1,6 @@
+framework module PagingDatePicker {
+  umbrella header "PagingDatePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

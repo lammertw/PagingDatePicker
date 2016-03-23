@@ -1,0 +1,8 @@
+EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$CONFIGURATION_BUILD_DIR/DynamicColor" "$CONFIGURATION_BUILD_DIR/PagingDatePicker" "$CONFIGURATION_BUILD_DIR/RSDayFlow" "$CONFIGURATION_BUILD_DIR/SwiftDate"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/DynamicColor/DynamicColor.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/PagingDatePicker/PagingDatePicker.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/RSDayFlow/RSDayFlow.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/SwiftDate/SwiftDate.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "DynamicColor" -framework "PagingDatePicker" -framework "RSDayFlow" -framework "SwiftDate"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_ROOT = ${SRCROOT}/Pods

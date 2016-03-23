@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "PagingDatePicker"
   s.version          = "0.1.0"
-  s.summary          = "A short description of PagingDatePicker."
+  s.summary          = "A calendar view date picker with paging."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,14 +17,17 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+  This library consists of two components that can be used on it's own or together. 
+  One is a swipable month picker and the other is a paging calendar date picker showing one month on each page. 
+  The month picker can be used as navigation header for the calendar date picker.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/PagingDatePicker"
+  s.homepage         = "https://github.com/lammertw/PagingDatePicker"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Lammert Westerhoff" => "westerhoff@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/PagingDatePicker.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/lammertw/PagingDatePicker.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/lwesterhoff'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
@@ -34,7 +37,7 @@ Pod::Spec.new do |s|
     'PagingDatePicker' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'DynamicColor', '~> 2.4'
+  s.dependency 'RSDayFlow', '~> 1.4'
+  s.dependency 'SwiftDate', '~> 3.0'
 end

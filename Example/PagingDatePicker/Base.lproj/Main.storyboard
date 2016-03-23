@@ -1,25 +1,237 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="11z-W2-rnb">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Table View Controller-->
+        <scene sceneID="LhP-6k-tr2">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <tableViewController id="lE9-s6-1H1" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="VMC-2g-oJZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="AQD-io-HTh">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="lQu-OU-2Od" style="IBUITableViewCellStyleDefault" id="MOS-Yg-rqT">
+                                        <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MOS-Yg-rqT" id="EPo-qh-5CS">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Paging date with month picker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lQu-OU-2Od">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="HkM-bi-Dge" kind="show" id="qbu-LT-Jux"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="CVb-XZ-1jQ" style="IBUITableViewCellStyleDefault" id="18n-yD-bCR">
+                                        <rect key="frame" x="0.0" y="108" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="18n-yD-bCR" id="QaP-5P-2JF">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Month picker only" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CVb-XZ-1jQ">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="lyQ-vM-w1R" kind="show" id="leG-IR-cYH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="fbO-0T-5Xf" style="IBUITableViewCellStyleDefault" id="YMa-aQ-gku">
+                                        <rect key="frame" x="0.0" y="152" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YMa-aQ-gku" id="M3V-w3-yWE">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Paging date picker only" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fbO-0T-5Xf">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ri2-Zj-5rB" kind="show" id="SeK-jx-TqY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="lE9-s6-1H1" id="2RA-xN-Ffb"/>
+                            <outlet property="delegate" destination="lE9-s6-1H1" id="tFM-UP-Oqa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Nd5-Wr-O2m"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Sw-nc-4nE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2049" y="468"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="O8h-hs-SIv">
+            <objects>
+                <viewController id="HkM-bi-Dge" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O8O-ba-5PB"/>
+                        <viewControllerLayoutGuide type="bottom" id="SQg-oz-ghK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GDH-8Q-Y0i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLj-4c-LWn" customClass="PagingDateAndMonthPickerView" customModule="PagingDatePicker">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fLj-4c-LWn" firstAttribute="leading" secondItem="GDH-8Q-Y0i" secondAttribute="leading" id="2WL-Tm-dPN"/>
+                            <constraint firstItem="SQg-oz-ghK" firstAttribute="top" secondItem="fLj-4c-LWn" secondAttribute="bottom" id="Kq1-Bv-ytY"/>
+                            <constraint firstItem="fLj-4c-LWn" firstAttribute="top" secondItem="O8O-ba-5PB" secondAttribute="bottom" id="PbQ-8q-bLa"/>
+                            <constraint firstAttribute="trailing" secondItem="fLj-4c-LWn" secondAttribute="trailing" id="xCN-Aa-cCW"/>
+                        </constraints>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v6c-4r-iSz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2798" y="-238"/>
+        </scene>
+        <!--Month Picker Only View Controller-->
+        <scene sceneID="ss8-Ah-qgg">
+            <objects>
+                <viewController id="lyQ-vM-w1R" customClass="MonthPickerOnlyViewController" customModule="PagingDatePicker_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yCH-Er-L4Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="gdN-Lb-eAQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Us9-3G-wEu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kr6-hE-jmE" customClass="MonthPickerView" customModule="PagingDatePicker">
+                                <rect key="frame" x="0.0" y="64" width="600" height="110"/>
+                                <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Nw9-cw-xiJ"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DVJ-DE-Li9">
+                                <rect key="frame" x="279" y="214" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DVJ-DE-Li9" firstAttribute="top" secondItem="Kr6-hE-jmE" secondAttribute="bottom" constant="40" id="3RX-zi-ECg"/>
+                            <constraint firstItem="Kr6-hE-jmE" firstAttribute="leading" secondItem="Us9-3G-wEu" secondAttribute="leading" id="5hl-l9-H3V"/>
+                            <constraint firstItem="DVJ-DE-Li9" firstAttribute="centerX" secondItem="Us9-3G-wEu" secondAttribute="centerX" id="DLA-wl-lgp"/>
+                            <constraint firstAttribute="trailing" secondItem="Kr6-hE-jmE" secondAttribute="trailing" id="pUv-s7-eEV"/>
+                            <constraint firstItem="Kr6-hE-jmE" firstAttribute="top" secondItem="yCH-Er-L4Z" secondAttribute="bottom" id="vzO-lf-34Q"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="monthLabel" destination="DVJ-DE-Li9" id="Y16-F0-d4m"/>
+                        <outlet property="monthPickerView" destination="Kr6-hE-jmE" id="gbq-lH-3wj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Doh-vm-MHr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2798" y="468"/>
+        </scene>
+        <!--Paging Date Picker Only View Controller-->
+        <scene sceneID="B2Q-7i-Tr6">
+            <objects>
+                <viewController id="ri2-Zj-5rB" customClass="PagingDatePickerOnlyViewController" customModule="PagingDatePicker_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ami-Nj-DBy"/>
+                        <viewControllerLayoutGuide type="bottom" id="bNL-ow-dGT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aP3-Xr-0ba">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlg-Hf-kXt" customClass="PagingDatePickerView" customModule="PagingDatePicker">
+                                <rect key="frame" x="0.0" y="178" width="600" height="422"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXJ-p8-Jr1">
+                                <rect key="frame" x="279" y="94" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No date selected" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCB-6n-fsf">
+                                <rect key="frame" x="235" y="127" width="131" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rXJ-p8-Jr1" firstAttribute="centerX" secondItem="aP3-Xr-0ba" secondAttribute="centerX" id="BDp-OX-5vV"/>
+                            <constraint firstItem="mCB-6n-fsf" firstAttribute="centerX" secondItem="rXJ-p8-Jr1" secondAttribute="centerX" id="LhS-u5-jDB"/>
+                            <constraint firstItem="rlg-Hf-kXt" firstAttribute="leading" secondItem="aP3-Xr-0ba" secondAttribute="leading" id="ZRs-CF-RLL"/>
+                            <constraint firstItem="rXJ-p8-Jr1" firstAttribute="top" secondItem="ami-Nj-DBy" secondAttribute="bottom" constant="30" id="h9o-yo-FSV"/>
+                            <constraint firstItem="mCB-6n-fsf" firstAttribute="top" secondItem="rXJ-p8-Jr1" secondAttribute="bottom" constant="12" id="ivt-Mr-Oc2"/>
+                            <constraint firstItem="bNL-ow-dGT" firstAttribute="top" secondItem="rlg-Hf-kXt" secondAttribute="bottom" id="lME-uS-FW3"/>
+                            <constraint firstItem="rlg-Hf-kXt" firstAttribute="top" secondItem="mCB-6n-fsf" secondAttribute="bottom" constant="30" id="oMb-Xy-fd8"/>
+                            <constraint firstAttribute="trailing" secondItem="rlg-Hf-kXt" secondAttribute="trailing" id="uWD-lk-wXW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="mCB-6n-fsf" id="74a-SB-xBS"/>
+                        <outlet property="datePickerView" destination="rlg-Hf-kXt" id="ac6-9o-JQL"/>
+                        <outlet property="monthLabel" destination="rXJ-p8-Jr1" id="ynC-C0-TBG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oEe-YJ-1Av" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2798" y="1171"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mB3-p3-MUE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="11z-W2-rnb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7Yl-hN-oNK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lE9-s6-1H1" kind="relationship" relationship="rootViewController" id="EHL-N4-jau"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WCM-8r-OVg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1237" y="468"/>
         </scene>
     </scenes>
 </document>

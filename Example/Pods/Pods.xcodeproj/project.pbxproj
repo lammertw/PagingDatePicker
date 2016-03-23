@@ -1,0 +1,1562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		035F413261A11C1E418EB59CAA5010BA /* RSDFDatePickerCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = F79FD5816097611FB4FAF55AB80B9877 /* RSDFDatePickerCollectionViewLayout.m */; };
+		092D9FA4AD3D26D1E8F69B622D8BE5D9 /* DateInRegion+Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67267D01864C963F9B0F086976C48A2B /* DateInRegion+Components.swift */; };
+		18E938F95DB58AF7A4E933D7BD645F0B /* DynamicColor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02BFB2D99FA275DB3357C2FAC7076752 /* DynamicColor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B0FD87CEA032A00A96DB60958669871 /* SwiftDate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95891631625255EE13856028359A2654 /* SwiftDate.framework */; };
+		1C2E7E07E7C6774B989C93B1B17B94AB /* Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D49140E8D5BBBEF3379ACEDDAAC970B /* Additions.swift */; };
+		2FD2C1901CA28E6E0063351F /* MonthPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD2C18F1CA28E6E0063351F /* MonthPickerView.swift */; };
+		2FD2C1961CA2A43F0063351F /* DatePickerWithoutMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD2C1951CA2A43F0063351F /* DatePickerWithoutMonthView.swift */; };
+		2FD2C1981CA2A44F0063351F /* PagingDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD2C1971CA2A44F0063351F /* PagingDatePickerView.swift */; };
+		2FD2C19C1CA2B0740063351F /* PagingDateAndMonthPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD2C19B1CA2B0740063351F /* PagingDateAndMonthPickerView.swift */; };
+		37B99CB997708144B581F556D8DA2AFB /* PagingDatePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9D5B3749E758056A95E0C2C156E582B1 /* PagingDatePicker.bundle */; };
+		3A5362B3BED60311BBA18945FF3C3335 /* DateInRegion+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EA03D275BA7FABC63DF903E36FB5DD /* DateInRegion+Operations.swift */; };
+		3B9DEB200A63E4C45048D9838C4AC9EE /* NSDateComponents+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14D0949A3BF2EDBBAF12C7FEA27D4243 /* NSDateComponents+SwiftDate.swift */; };
+		3D2A24B91E2D5899BDE7BD4AF22C23C3 /* NSTimeZone+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6282B2B8C6AF2040B0ABF5CF84868C6C /* NSTimeZone+SwiftDate.swift */; };
+		434A2DBA99834E4E9509CC6F4DA78FEC /* PagingDatePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92074642D9EFD463BB118C1AEED0EAC0 /* PagingDatePicker-dummy.m */; };
+		4575CC77D299C93E481216D61F154DBD /* RSDFDatePickerDayCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CBCD5BC9D3965036E1D91DCD3B5800C7 /* RSDFDatePickerDayCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A3E42A5ED8FC5C446A92C644391D881 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE37260B8D6B12672B8C96403BF164CB /* UIKit.framework */; };
+		4E3B2FEE8D15A3644225D73DD39F84C5 /* RSDFDatePickerDaysOfWeekView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50C26D04E069831A9B2590FECF1DFD72 /* RSDFDatePickerDaysOfWeekView.m */; };
+		51EBEE09D1F69C7C0A5BBF671DC46671 /* DateInRegion+NSDatePort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DC4254A029898AAEE8D5142B56741E /* DateInRegion+NSDatePort.swift */; };
+		5269EE17F944FEE70FA961C65758B25E /* Pods-PagingDatePicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E716A963E9145521924E3B4B71771FDA /* Pods-PagingDatePicker_Tests-dummy.m */; };
+		5575C851E58C6C0A771BBCB278863E21 /* RSDFDatePickerCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D69A4A4B0E1D1FC38F3D6C53892C9ECF /* RSDFDatePickerCollectionView.m */; };
+		560643B27617038512AA64E271DD78C3 /* HSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E38514FF9E67F0BB93523BD9F0DE893 /* HSL.swift */; };
+		5DB0D4947FC2E7AD2B55A34EA39191E2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE37260B8D6B12672B8C96403BF164CB /* UIKit.framework */; };
+		5F00BB60192A5C7E66DEB628A9A0661D /* DateInRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3B47E43433996018FC7124CA608966F /* DateInRegion.swift */; };
+		62E29425E2735EDFB2FEB127813F4D33 /* DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5169929380E19C459EADB16C175760 /* DynamicColor.swift */; };
+		63D39ED9BC1092207B84089C3D102E5F /* NSLocale+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60CCB6ED68CBD5F52620FADC5EF7577 /* NSLocale+SwiftDate.swift */; };
+		64B99D76EB34C121D911814FB4389865 /* NSTimeInterval+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B157830DCC172989D94BB2326559774 /* NSTimeInterval+SwiftDate.swift */; };
+		68A6C9540F5AC5C7D16CFB4FB0579507 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E072AFD9E29F620697528304C8496F43 /* Foundation.framework */; };
+		6EF338F95CC1540607FDFCB409E740DE /* DateInRegion+Equations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12DFDBC8109532A4F12C1DD1FBAC71B1 /* DateInRegion+Equations.swift */; };
+		724DDC05F74C4F272792F30793FA5B1D /* Pods-PagingDatePicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5840075AE8081FD8E5EF9014C9FF934D /* Pods-PagingDatePicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76254D54AAAD0FD7A443155B2ACA7E26 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AC5853F4513717333B3CA3C5A306C /* Region.swift */; };
+		782F0E702D122C413B91D00FA0C83E5D /* NSDateFormatter+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8D63727760F2A54E97AD0FA00F93C /* NSDateFormatter+SwiftDate.swift */; };
+		79B3C41028EE9C678BD0D011FC777798 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E072AFD9E29F620697528304C8496F43 /* Foundation.framework */; };
+		7CB20789DCCD5FE4F403B2BDD16FEB3C /* RSDFDatePickerMonthHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9117A2E848BFD155D4F7DCE54758870B /* RSDFDatePickerMonthHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A9AA4EB91C060A398C86A903084A446 /* RSDFDatePickerDaysOfWeekView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D22358D802B860A1D8E74F0301AFCD5 /* RSDFDatePickerDaysOfWeekView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AB8D32572D8752964BE051499A41490 /* RSDFDatePickerMonthHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D733497B610E2E2815634409D3B1702 /* RSDFDatePickerMonthHeader.m */; };
+		8B58CE18D6F5424AD25C61A9C9175960 /* SwiftDate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 293840545F1C48C58943577E7F5F2EB7 /* SwiftDate-dummy.m */; };
+		8D8E19E44EAF278FCC2D55228E4B2C8F /* PagingDatePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C62A86135A66712FD3FE6FD4245B7BD /* PagingDatePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		94C65AB59EE697609482F49C5EA7B024 /* Pods-PagingDatePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E076287CC56E2D3D75B91D3DDBA1A2D /* Pods-PagingDatePicker_Example-dummy.m */; };
+		994BB963CA7FF307AEB9644C0D586415 /* DynamicColor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2ADE5242CB9C5E23DD15D63082020541 /* DynamicColor.framework */; };
+		9963DAC50863F49CCA81520AB66BA9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E072AFD9E29F620697528304C8496F43 /* Foundation.framework */; };
+		A1939491C67FD06029B4969C468127AD /* RSDFDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73E40838FE4EC3A933F433BE991DD1C1 /* RSDFDatePickerView.m */; };
+		A218AF4F5770732D7E4A27756374D0D6 /* DateInRegion+Comparisons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E85E264C7D7C3F68C64131E2E126A151 /* DateInRegion+Comparisons.swift */; };
+		AB8292AC7A17BDDB07965D33437DEB67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E072AFD9E29F620697528304C8496F43 /* Foundation.framework */; };
+		AE8590F55D555DC18A4BEDBF34D8BF1A /* RSDayFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A724F1A78193F9A3DDFD3AC51EA0A6D2 /* RSDayFlow.framework */; };
+		AF825CD65D52477C8402D2397964D342 /* RSDayFlow.h in Headers */ = {isa = PBXBuildFile; fileRef = D7EAE1C634B54659D824BC4897CBB8B8 /* RSDayFlow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B73D88DD7C718ED70608AAE5C29D3CAD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AE682DB93C2FD47341C01A387AF2EC1 /* QuartzCore.framework */; };
+		B996E14BA1F3AF6F4CD19843C151C6B3 /* RSDFDatePickerCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 7970415103996806F0A540D06CA2DE8D /* RSDFDatePickerCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD1EAD0A9E9B67AEAB1BD2615B0BAAB0 /* Pods-PagingDatePicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8759E8FF2FE9849F4A1B534B3D57FE55 /* Pods-PagingDatePicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEB896594BE341C570F2C901EBBD3865 /* RSDFDatePickerDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F9D5F3F49CB8993DF638D5EDC03B6D0 /* RSDFDatePickerDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF95D6BF916FC321D38B9BA7C1EAF299 /* NSDateInterval.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC433E7EEB8EDDD8C78072C5D2BCCDE /* NSDateInterval.swift */; };
+		BFDD3F678AD8EE7322D21CFA80D023DB /* RSDFDatePickerView+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 0187AF51D9C3A5AF7008553435A3DBE2 /* RSDFDatePickerView+Protected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0D44A1D1C527612E75457DBFF0C5C9D /* NSCalendar+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72CB96D02953315EEBB98FBC69AACA2 /* NSCalendar+SwiftDate.swift */; };
+		C30CDEE9E81020418A064983EB4E0FF4 /* RSDFDatePickerCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = D44A738509C31B23C04F2400AC5DCC7C /* RSDFDatePickerCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF40F646F2AFC462800CFD709C537BEC /* RSDFDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F984ABFDA0A39422903A11A2F939EFEC /* RSDFDatePickerDayCell.m */; };
+		D1840284C4934BBDA23837E123461B13 /* RSDayFlow-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A78FA72B58B228BDE0302A544BBFFB3 /* RSDayFlow-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D23629AD907FA755679C0E8EF40AA34B /* DateInRegion+StartEnd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30F5BAB903E6105F53DC6318C38E8932 /* DateInRegion+StartEnd.swift */; };
+		D652704F132768925EC509ABB5E95D1B /* SwiftDate-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C38F028A62B64F4EB889F0CA7AFDACA /* SwiftDate-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9A99C120A1605DABC50B04AF7D3127B /* RSDayFlow-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EB6E28BABD1E1F0C0F95D9AAD18464B /* RSDayFlow-dummy.m */; };
+		DB0AFF66A98C4D6876A7CD3F56ACABB5 /* Dictionary+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531E1BDB0911F49E63BFC172D9CBC309 /* Dictionary+SwiftDate.swift */; };
+		DDAE2730611AEF6250382CE67A9AD99A /* DynamicColor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91B3A4E632EB7DFFB2D6FCB0E6C8D5E8 /* DynamicColor-dummy.m */; };
+		E289A5524F3EF6157E8DE73BAD86F63F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E072AFD9E29F620697528304C8496F43 /* Foundation.framework */; };
+		E46D206FE156F77676FAD1669BAE9DA2 /* NSDate+SwiftDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A47A1275FB479DC3C0010C2843549 /* NSDate+SwiftDate.swift */; };
+		ED0F0AC783770DF8B72D3A17B2F56609 /* NSCalendar+RSDFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 08262203924576614C89FE994FE5DFD0 /* NSCalendar+RSDFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F69CCFC9A01184A8E5F19BF048771408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E072AFD9E29F620697528304C8496F43 /* Foundation.framework */; };
+		F8D636086FC13D416EDE059798A5F8D7 /* DateInRegion+Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31835834490D4A70C796C0D433290C57 /* DateInRegion+Formatter.swift */; };
+		FC494FAB638A9A1D38B38FBE67993B82 /* NSCalendar+RSDFAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 293BD6843CDD228B077B3FEE352D73A4 /* NSCalendar+RSDFAdditions.m */; };
+		FD12A0A1251672816EF26F4BDF6645E7 /* RSDFDatePickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AC15F78EFA9A0348A5593F4F64EE15B /* RSDFDatePickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		16CE03E8C2465CFDC0F6E592A420D1CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AA9129346FA34FE87B085243DF1F38F;
+			remoteInfo = SwiftDate;
+		};
+		1909C588B91033B245FB7B16A6684E0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AA9129346FA34FE87B085243DF1F38F;
+			remoteInfo = SwiftDate;
+		};
+		2EA09CB652EF5C16475CCA925FF96294 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA455BA524173C4958EA7B372CC7EEF2;
+			remoteInfo = "PagingDatePicker-PagingDatePicker";
+		};
+		3B7C0610A179DB0FC0CDDCDDF6BD542E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08F6A5AF8E89681F880EB03F167AACB7;
+			remoteInfo = DynamicColor;
+		};
+		6F1781B21E4CD180C264CE12D46C3A74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7AA9129346FA34FE87B085243DF1F38F;
+			remoteInfo = SwiftDate;
+		};
+		A9AB9E28BDC4DDB17F4D478C7889638A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08F6A5AF8E89681F880EB03F167AACB7;
+			remoteInfo = DynamicColor;
+		};
+		B30AFAB65B0A67C3C6D8A42743A2EB8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2B251AA998A17AEB2256F9E4E5D6A4E;
+			remoteInfo = PagingDatePicker;
+		};
+		C3445BFC51B629756E7F48E4D4BD57C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 850BD358D7E2C33E603C6A3FA517ED48;
+			remoteInfo = RSDayFlow;
+		};
+		C7344065E96AD3B1E74E23B57CC6CC36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 850BD358D7E2C33E603C6A3FA517ED48;
+			remoteInfo = RSDayFlow;
+		};
+		CC073F0270F742DBC54C614DC5A20318 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 850BD358D7E2C33E603C6A3FA517ED48;
+			remoteInfo = RSDayFlow;
+		};
+		F9D8B7960F228143695AAC9423640518 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08F6A5AF8E89681F880EB03F167AACB7;
+			remoteInfo = DynamicColor;
+		};
+		FB293968A1E4C8A9212FFB97E2530FD0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E2B251AA998A17AEB2256F9E4E5D6A4E;
+			remoteInfo = PagingDatePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0187AF51D9C3A5AF7008553435A3DBE2 /* RSDFDatePickerView+Protected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RSDFDatePickerView+Protected.h"; path = "RSDayFlow/RSDFDatePickerView+Protected.h"; sourceTree = "<group>"; };
+		02BFB2D99FA275DB3357C2FAC7076752 /* DynamicColor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicColor-umbrella.h"; sourceTree = "<group>"; };
+		08262203924576614C89FE994FE5DFD0 /* NSCalendar+RSDFAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSCalendar+RSDFAdditions.h"; path = "RSDayFlow/NSCalendar+RSDFAdditions.h"; sourceTree = "<group>"; };
+		0AB54B93592ADFEDD878E2ECE344C809 /* DynamicColor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DynamicColor-prefix.pch"; sourceTree = "<group>"; };
+		0E076287CC56E2D3D75B91D3DDBA1A2D /* Pods-PagingDatePicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PagingDatePicker_Example-dummy.m"; sourceTree = "<group>"; };
+		12DFDBC8109532A4F12C1DD1FBAC71B1 /* DateInRegion+Equations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Equations.swift"; path = "Sources/SwiftDate/DateInRegion+Equations.swift"; sourceTree = "<group>"; };
+		14D0949A3BF2EDBBAF12C7FEA27D4243 /* NSDateComponents+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDateComponents+SwiftDate.swift"; path = "Sources/SwiftDate/NSDateComponents+SwiftDate.swift"; sourceTree = "<group>"; };
+		1AC15F78EFA9A0348A5593F4F64EE15B /* RSDFDatePickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerView.h; path = RSDayFlow/RSDFDatePickerView.h; sourceTree = "<group>"; };
+		1D733497B610E2E2815634409D3B1702 /* RSDFDatePickerMonthHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerMonthHeader.m; path = RSDayFlow/RSDFDatePickerMonthHeader.m; sourceTree = "<group>"; };
+		20C4F943E4593AF711334353E93ACC67 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		293840545F1C48C58943577E7F5F2EB7 /* SwiftDate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftDate-dummy.m"; sourceTree = "<group>"; };
+		293BD6843CDD228B077B3FEE352D73A4 /* NSCalendar+RSDFAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+RSDFAdditions.m"; path = "RSDayFlow/NSCalendar+RSDFAdditions.m"; sourceTree = "<group>"; };
+		2AC433E7EEB8EDDD8C78072C5D2BCCDE /* NSDateInterval.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDateInterval.swift; path = Sources/SwiftDate/NSDateInterval.swift; sourceTree = "<group>"; };
+		2ADE5242CB9C5E23DD15D63082020541 /* DynamicColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FAF217218EBBBA3A55F061B93011511 /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FD2C18F1CA28E6E0063351F /* MonthPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonthPickerView.swift; sourceTree = "<group>"; };
+		2FD2C1951CA2A43F0063351F /* DatePickerWithoutMonthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerWithoutMonthView.swift; sourceTree = "<group>"; };
+		2FD2C1971CA2A44F0063351F /* PagingDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingDatePickerView.swift; sourceTree = "<group>"; };
+		2FD2C19B1CA2B0740063351F /* PagingDateAndMonthPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingDateAndMonthPickerView.swift; sourceTree = "<group>"; };
+		30F5BAB903E6105F53DC6318C38E8932 /* DateInRegion+StartEnd.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+StartEnd.swift"; path = "Sources/SwiftDate/DateInRegion+StartEnd.swift"; sourceTree = "<group>"; };
+		31835834490D4A70C796C0D433290C57 /* DateInRegion+Formatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Formatter.swift"; path = "Sources/SwiftDate/DateInRegion+Formatter.swift"; sourceTree = "<group>"; };
+		324D065E651C99749F191E0070AD84FA /* Pods_PagingDatePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PagingDatePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		34DC4254A029898AAEE8D5142B56741E /* DateInRegion+NSDatePort.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+NSDatePort.swift"; path = "Sources/SwiftDate/DateInRegion+NSDatePort.swift"; sourceTree = "<group>"; };
+		3B375BA2E54A75891E0E178DCA9C45A9 /* PagingDatePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagingDatePicker.xcconfig; sourceTree = "<group>"; };
+		3EC37C5DAA3E1E9D89D62F059D062D1D /* Pods-PagingDatePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PagingDatePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		462487EDCECF7E3D6FD0068FCC38CFAC /* Pods-PagingDatePicker_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PagingDatePicker_Example-resources.sh"; sourceTree = "<group>"; };
+		4B157830DCC172989D94BB2326559774 /* NSTimeInterval+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimeInterval+SwiftDate.swift"; path = "Sources/SwiftDate/NSTimeInterval+SwiftDate.swift"; sourceTree = "<group>"; };
+		4EB6E28BABD1E1F0C0F95D9AAD18464B /* RSDayFlow-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RSDayFlow-dummy.m"; sourceTree = "<group>"; };
+		4F9272214140D9DC22F335180E46D79B /* Pods-PagingDatePicker_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PagingDatePicker_Tests-resources.sh"; sourceTree = "<group>"; };
+		50C26D04E069831A9B2590FECF1DFD72 /* RSDFDatePickerDaysOfWeekView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerDaysOfWeekView.m; path = RSDayFlow/RSDFDatePickerDaysOfWeekView.m; sourceTree = "<group>"; };
+		531E1BDB0911F49E63BFC172D9CBC309 /* Dictionary+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+SwiftDate.swift"; path = "Sources/SwiftDate/Dictionary+SwiftDate.swift"; sourceTree = "<group>"; };
+		5840075AE8081FD8E5EF9014C9FF934D /* Pods-PagingDatePicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PagingDatePicker_Example-umbrella.h"; sourceTree = "<group>"; };
+		5C62A86135A66712FD3FE6FD4245B7BD /* PagingDatePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingDatePicker-umbrella.h"; sourceTree = "<group>"; };
+		5CF9702DEE4D6BAAE65A27C11E6B62F6 /* RSDayFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSDayFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D22358D802B860A1D8E74F0301AFCD5 /* RSDFDatePickerDaysOfWeekView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerDaysOfWeekView.h; path = RSDayFlow/RSDFDatePickerDaysOfWeekView.h; sourceTree = "<group>"; };
+		5E5A47A1275FB479DC3C0010C2843549 /* NSDate+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDate+SwiftDate.swift"; path = "Sources/SwiftDate/NSDate+SwiftDate.swift"; sourceTree = "<group>"; };
+		5F19D1C05B5E7A226E4185E20A217500 /* SwiftDate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftDate.xcconfig; sourceTree = "<group>"; };
+		6282B2B8C6AF2040B0ABF5CF84868C6C /* NSTimeZone+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTimeZone+SwiftDate.swift"; path = "Sources/SwiftDate/NSTimeZone+SwiftDate.swift"; sourceTree = "<group>"; };
+		67267D01864C963F9B0F086976C48A2B /* DateInRegion+Components.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Components.swift"; path = "Sources/SwiftDate/DateInRegion+Components.swift"; sourceTree = "<group>"; };
+		6B5169929380E19C459EADB16C175760 /* DynamicColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicColor.swift; path = Sources/DynamicColor.swift; sourceTree = "<group>"; };
+		6F8555824569299278C5BB966EED9B6F /* DynamicColor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DynamicColor.xcconfig; sourceTree = "<group>"; };
+		73E40838FE4EC3A933F433BE991DD1C1 /* RSDFDatePickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerView.m; path = RSDayFlow/RSDFDatePickerView.m; sourceTree = "<group>"; };
+		7970415103996806F0A540D06CA2DE8D /* RSDFDatePickerCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerCollectionViewLayout.h; path = RSDayFlow/RSDFDatePickerCollectionViewLayout.h; sourceTree = "<group>"; };
+		7AE682DB93C2FD47341C01A387AF2EC1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		7CD29DEE1105C1833E5085CB9444AB1E /* Pods_PagingDatePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PagingDatePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E38514FF9E67F0BB93523BD9F0DE893 /* HSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HSL.swift; path = Sources/HSL.swift; sourceTree = "<group>"; };
+		7F9D5F3F49CB8993DF638D5EDC03B6D0 /* RSDFDatePickerDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerDate.h; path = RSDayFlow/RSDFDatePickerDate.h; sourceTree = "<group>"; };
+		8142B9807DDC1058967F95630D21277E /* Pods-PagingDatePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PagingDatePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		81F8D63727760F2A54E97AD0FA00F93C /* NSDateFormatter+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSDateFormatter+SwiftDate.swift"; path = "Sources/SwiftDate/NSDateFormatter+SwiftDate.swift"; sourceTree = "<group>"; };
+		83EA03D275BA7FABC63DF903E36FB5DD /* DateInRegion+Operations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Operations.swift"; path = "Sources/SwiftDate/DateInRegion+Operations.swift"; sourceTree = "<group>"; };
+		8759E8FF2FE9849F4A1B534B3D57FE55 /* Pods-PagingDatePicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PagingDatePicker_Tests-umbrella.h"; sourceTree = "<group>"; };
+		896C5C774191D025962C29CCF3BDDB84 /* PagingDatePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingDatePicker-prefix.pch"; sourceTree = "<group>"; };
+		8A78FA72B58B228BDE0302A544BBFFB3 /* RSDayFlow-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSDayFlow-umbrella.h"; sourceTree = "<group>"; };
+		8C38F028A62B64F4EB889F0CA7AFDACA /* SwiftDate-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-umbrella.h"; sourceTree = "<group>"; };
+		8CA289176C50F996169B945432E515AE /* Pods-PagingDatePicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PagingDatePicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9117A2E848BFD155D4F7DCE54758870B /* RSDFDatePickerMonthHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerMonthHeader.h; path = RSDayFlow/RSDFDatePickerMonthHeader.h; sourceTree = "<group>"; };
+		91B3A4E632EB7DFFB2D6FCB0E6C8D5E8 /* DynamicColor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DynamicColor-dummy.m"; sourceTree = "<group>"; };
+		92074642D9EFD463BB118C1AEED0EAC0 /* PagingDatePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagingDatePicker-dummy.m"; sourceTree = "<group>"; };
+		92434C8DD2FFB4C44AB6DDFE02FD67F4 /* Pods-PagingDatePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PagingDatePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		95891631625255EE13856028359A2654 /* SwiftDate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97BE540A03AA4D3F225DD98460819C9B /* Pods-PagingDatePicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PagingDatePicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		97EE91431053FA60AA33B463B1992512 /* SwiftDate-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftDate-prefix.pch"; sourceTree = "<group>"; };
+		9D49140E8D5BBBEF3379ACEDDAAC970B /* Additions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Additions.swift; path = Sources/SwiftDate/Additions.swift; sourceTree = "<group>"; };
+		9D5B3749E758056A95E0C2C156E582B1 /* PagingDatePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagingDatePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A724F1A78193F9A3DDFD3AC51EA0A6D2 /* RSDayFlow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSDayFlow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A91DECCD902C24A67322BC8FCFE03C /* Pods-PagingDatePicker_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PagingDatePicker_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B72CB96D02953315EEBB98FBC69AACA2 /* NSCalendar+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSCalendar+SwiftDate.swift"; path = "Sources/SwiftDate/NSCalendar+SwiftDate.swift"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BE162F5064B490FD8095F141EB034C4E /* Pods-PagingDatePicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PagingDatePicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF4BDDE7599C0E7465FAC3FD6030713F /* Pods-PagingDatePicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PagingDatePicker_Example.modulemap"; sourceTree = "<group>"; };
+		C68CB5E92ADC5D513E8C3879B96C52D1 /* DynamicColor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicColor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBCD5BC9D3965036E1D91DCD3B5800C7 /* RSDFDatePickerDayCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerDayCell.h; path = RSDayFlow/RSDFDatePickerDayCell.h; sourceTree = "<group>"; };
+		CDAA4C26A9C36B975AC193B89CF79C02 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE37260B8D6B12672B8C96403BF164CB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CE3AC5853F4513717333B3CA3C5A306C /* Region.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Region.swift; path = Sources/SwiftDate/Region.swift; sourceTree = "<group>"; };
+		CEAB41845CD71B43A7AA2AA4CE394F49 /* RSDayFlow.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RSDayFlow.xcconfig; sourceTree = "<group>"; };
+		CEF4955AF360E1301EA8EF72B268C750 /* RSDayFlow.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RSDayFlow.modulemap; sourceTree = "<group>"; };
+		D292B568B030714923C55F962C2C5BD9 /* Pods-PagingDatePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PagingDatePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D44A738509C31B23C04F2400AC5DCC7C /* RSDFDatePickerCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDFDatePickerCollectionView.h; path = RSDayFlow/RSDFDatePickerCollectionView.h; sourceTree = "<group>"; };
+		D4A5B5CDDDC83619B7FE594D116B663B /* SwiftDate.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftDate.modulemap; sourceTree = "<group>"; };
+		D5126D8495D7A60FD2EE32DE2B4FA8BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D69A4A4B0E1D1FC38F3D6C53892C9ECF /* RSDFDatePickerCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerCollectionView.m; path = RSDayFlow/RSDFDatePickerCollectionView.m; sourceTree = "<group>"; };
+		D7A0629A91D08702D0BD2286C9948105 /* Pods-PagingDatePicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PagingDatePicker_Tests.modulemap"; sourceTree = "<group>"; };
+		D7EAE1C634B54659D824BC4897CBB8B8 /* RSDayFlow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RSDayFlow.h; path = RSDayFlow/RSDayFlow.h; sourceTree = "<group>"; };
+		DA18DE0ABA8DDDC8E2E1E250D840C5B6 /* DynamicColor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = DynamicColor.modulemap; sourceTree = "<group>"; };
+		DA2CEE101D0EE9B0B424301C9150F36E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC8893A7F06E1CDA92F07D838BE4252F /* ResourceBundle-PagingDatePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PagingDatePicker-Info.plist"; sourceTree = "<group>"; };
+		E072AFD9E29F620697528304C8496F43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E15E01181F0E184CA2BCA94803476BE5 /* RSDayFlow-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RSDayFlow-prefix.pch"; sourceTree = "<group>"; };
+		E60CCB6ED68CBD5F52620FADC5EF7577 /* NSLocale+SwiftDate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLocale+SwiftDate.swift"; path = "Sources/SwiftDate/NSLocale+SwiftDate.swift"; sourceTree = "<group>"; };
+		E712D7C42C1F68D24AAFF314237F7D51 /* Pods-PagingDatePicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PagingDatePicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E716A963E9145521924E3B4B71771FDA /* Pods-PagingDatePicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PagingDatePicker_Tests-dummy.m"; sourceTree = "<group>"; };
+		E85E264C7D7C3F68C64131E2E126A151 /* DateInRegion+Comparisons.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DateInRegion+Comparisons.swift"; path = "Sources/SwiftDate/DateInRegion+Comparisons.swift"; sourceTree = "<group>"; };
+		F3B47E43433996018FC7124CA608966F /* DateInRegion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateInRegion.swift; path = Sources/SwiftDate/DateInRegion.swift; sourceTree = "<group>"; };
+		F567EE86556C21DC59AABCD607B0C6A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7087901B2F5E2818C62F5DF8C76A7AC /* PagingDatePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PagingDatePicker.modulemap; sourceTree = "<group>"; };
+		F79FD5816097611FB4FAF55AB80B9877 /* RSDFDatePickerCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerCollectionViewLayout.m; path = RSDayFlow/RSDFDatePickerCollectionViewLayout.m; sourceTree = "<group>"; };
+		F984ABFDA0A39422903A11A2F939EFEC /* RSDFDatePickerDayCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RSDFDatePickerDayCell.m; path = RSDayFlow/RSDFDatePickerDayCell.m; sourceTree = "<group>"; };
+		FC415BEE069E7B38B287C1EB93D3A6C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE5ABF07906AC3F7ADC4388734A347CC /* Pods-PagingDatePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PagingDatePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		FFEE43FCACDF7C6717EBE752D6FAF289 /* PagingDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PagingDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		17E47E7343FE16DDA4EF80D74F5594AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8292AC7A17BDDB07965D33437DEB67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2238FCD94A4DA0978EF3DBA51EAB157A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9963DAC50863F49CCA81520AB66BA9DB /* Foundation.framework in Frameworks */,
+				4A3E42A5ED8FC5C446A92C644391D881 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D459736CA13528A2D0CA06A9416FA9F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				994BB963CA7FF307AEB9644C0D586415 /* DynamicColor.framework in Frameworks */,
+				79B3C41028EE9C678BD0D011FC777798 /* Foundation.framework in Frameworks */,
+				AE8590F55D555DC18A4BEDBF34D8BF1A /* RSDayFlow.framework in Frameworks */,
+				1B0FD87CEA032A00A96DB60958669871 /* SwiftDate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A198CA095F8C439818F0B52C20CBE4E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD0516FC9308BAE84911EA844176F343 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E289A5524F3EF6157E8DE73BAD86F63F /* Foundation.framework in Frameworks */,
+				B73D88DD7C718ED70608AAE5C29D3CAD /* QuartzCore.framework in Frameworks */,
+				5DB0D4947FC2E7AD2B55A34EA39191E2 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C81CEAF6463B1E34358D6B72D57F667E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68A6C9540F5AC5C7D16CFB4FB0579507 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9CFC222E7B03222C4578DED932CA698 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F69CCFC9A01184A8E5F19BF048771408 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03B646235B967B28A47744183AE814CB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D5126D8495D7A60FD2EE32DE2B4FA8BE /* Info.plist */,
+				D4A5B5CDDDC83619B7FE594D116B663B /* SwiftDate.modulemap */,
+				5F19D1C05B5E7A226E4185E20A217500 /* SwiftDate.xcconfig */,
+				293840545F1C48C58943577E7F5F2EB7 /* SwiftDate-dummy.m */,
+				97EE91431053FA60AA33B463B1992512 /* SwiftDate-prefix.pch */,
+				8C38F028A62B64F4EB889F0CA7AFDACA /* SwiftDate-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftDate";
+			sourceTree = "<group>";
+		};
+		0710D95A56DE01DE3BCFF1C4AB930458 /* SwiftDate */ = {
+			isa = PBXGroup;
+			children = (
+				9D49140E8D5BBBEF3379ACEDDAAC970B /* Additions.swift */,
+				F3B47E43433996018FC7124CA608966F /* DateInRegion.swift */,
+				E85E264C7D7C3F68C64131E2E126A151 /* DateInRegion+Comparisons.swift */,
+				67267D01864C963F9B0F086976C48A2B /* DateInRegion+Components.swift */,
+				12DFDBC8109532A4F12C1DD1FBAC71B1 /* DateInRegion+Equations.swift */,
+				31835834490D4A70C796C0D433290C57 /* DateInRegion+Formatter.swift */,
+				34DC4254A029898AAEE8D5142B56741E /* DateInRegion+NSDatePort.swift */,
+				83EA03D275BA7FABC63DF903E36FB5DD /* DateInRegion+Operations.swift */,
+				30F5BAB903E6105F53DC6318C38E8932 /* DateInRegion+StartEnd.swift */,
+				531E1BDB0911F49E63BFC172D9CBC309 /* Dictionary+SwiftDate.swift */,
+				B72CB96D02953315EEBB98FBC69AACA2 /* NSCalendar+SwiftDate.swift */,
+				5E5A47A1275FB479DC3C0010C2843549 /* NSDate+SwiftDate.swift */,
+				14D0949A3BF2EDBBAF12C7FEA27D4243 /* NSDateComponents+SwiftDate.swift */,
+				81F8D63727760F2A54E97AD0FA00F93C /* NSDateFormatter+SwiftDate.swift */,
+				2AC433E7EEB8EDDD8C78072C5D2BCCDE /* NSDateInterval.swift */,
+				E60CCB6ED68CBD5F52620FADC5EF7577 /* NSLocale+SwiftDate.swift */,
+				4B157830DCC172989D94BB2326559774 /* NSTimeInterval+SwiftDate.swift */,
+				6282B2B8C6AF2040B0ABF5CF84868C6C /* NSTimeZone+SwiftDate.swift */,
+				CE3AC5853F4513717333B3CA3C5A306C /* Region.swift */,
+				03B646235B967B28A47744183AE814CB /* Support Files */,
+			);
+			path = SwiftDate;
+			sourceTree = "<group>";
+		};
+		09C7224BA7CBC361B61BF0C3011D8913 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC2E467FEEA0BF567F3353BAD43C5E06 /* Pods-PagingDatePicker_Example */,
+				7E48F2B8A7E0B76FE585E44AEFB6EA5D /* Pods-PagingDatePicker_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1CE477E3565C951D70097B49D1223ECB /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E072AFD9E29F620697528304C8496F43 /* Foundation.framework */,
+				7AE682DB93C2FD47341C01A387AF2EC1 /* QuartzCore.framework */,
+				CE37260B8D6B12672B8C96403BF164CB /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		21DDC1D57F904ED7E0857CB124263938 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				336042960D81E4751ABA2A4B6B234CC7 /* PagingDatePicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2A689CF28B0212E11C549B8D25C417AB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FC415BEE069E7B38B287C1EB93D3A6C3 /* Info.plist */,
+				CEF4955AF360E1301EA8EF72B268C750 /* RSDayFlow.modulemap */,
+				CEAB41845CD71B43A7AA2AA4CE394F49 /* RSDayFlow.xcconfig */,
+				4EB6E28BABD1E1F0C0F95D9AAD18464B /* RSDayFlow-dummy.m */,
+				E15E01181F0E184CA2BCA94803476BE5 /* RSDayFlow-prefix.pch */,
+				8A78FA72B58B228BDE0302A544BBFFB3 /* RSDayFlow-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/RSDayFlow";
+			sourceTree = "<group>";
+		};
+		336042960D81E4751ABA2A4B6B234CC7 /* PagingDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				CEABC706BC3AC003F281D291A1DBF5B7 /* Pod */,
+				BB11937C466A77A0FD27FD7120F4CA34 /* Support Files */,
+			);
+			name = PagingDatePicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6CAFF5FD510BE162160DBEA4634FE367 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C68CB5E92ADC5D513E8C3879B96C52D1 /* DynamicColor.framework */,
+				9D5B3749E758056A95E0C2C156E582B1 /* PagingDatePicker.bundle */,
+				FFEE43FCACDF7C6717EBE752D6FAF289 /* PagingDatePicker.framework */,
+				7CD29DEE1105C1833E5085CB9444AB1E /* Pods_PagingDatePicker_Example.framework */,
+				324D065E651C99749F191E0070AD84FA /* Pods_PagingDatePicker_Tests.framework */,
+				5CF9702DEE4D6BAAE65A27C11E6B62F6 /* RSDayFlow.framework */,
+				2FAF217218EBBBA3A55F061B93011511 /* SwiftDate.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7470BC8CAD2E0F280CA481268C835187 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A6A39BCEF4546574D5E982FA19E00C7 /* DynamicColor */,
+				99FBF6A473FCFC0C58305480A8FE3552 /* RSDayFlow */,
+				0710D95A56DE01DE3BCFF1C4AB930458 /* SwiftDate */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		74C63532B31B19A5FBCBA6F151388107 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2ADE5242CB9C5E23DD15D63082020541 /* DynamicColor.framework */,
+				A724F1A78193F9A3DDFD3AC51EA0A6D2 /* RSDayFlow.framework */,
+				95891631625255EE13856028359A2654 /* SwiftDate.framework */,
+				1CE477E3565C951D70097B49D1223ECB /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				21DDC1D57F904ED7E0857CB124263938 /* Development Pods */,
+				74C63532B31B19A5FBCBA6F151388107 /* Frameworks */,
+				7470BC8CAD2E0F280CA481268C835187 /* Pods */,
+				6CAFF5FD510BE162160DBEA4634FE367 /* Products */,
+				09C7224BA7CBC361B61BF0C3011D8913 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E48F2B8A7E0B76FE585E44AEFB6EA5D /* Pods-PagingDatePicker_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F567EE86556C21DC59AABCD607B0C6A6 /* Info.plist */,
+				D7A0629A91D08702D0BD2286C9948105 /* Pods-PagingDatePicker_Tests.modulemap */,
+				97BE540A03AA4D3F225DD98460819C9B /* Pods-PagingDatePicker_Tests-acknowledgements.markdown */,
+				8CA289176C50F996169B945432E515AE /* Pods-PagingDatePicker_Tests-acknowledgements.plist */,
+				E716A963E9145521924E3B4B71771FDA /* Pods-PagingDatePicker_Tests-dummy.m */,
+				B5A91DECCD902C24A67322BC8FCFE03C /* Pods-PagingDatePicker_Tests-frameworks.sh */,
+				4F9272214140D9DC22F335180E46D79B /* Pods-PagingDatePicker_Tests-resources.sh */,
+				8759E8FF2FE9849F4A1B534B3D57FE55 /* Pods-PagingDatePicker_Tests-umbrella.h */,
+				92434C8DD2FFB4C44AB6DDFE02FD67F4 /* Pods-PagingDatePicker_Tests.debug.xcconfig */,
+				FE5ABF07906AC3F7ADC4388734A347CC /* Pods-PagingDatePicker_Tests.release.xcconfig */,
+			);
+			name = "Pods-PagingDatePicker_Tests";
+			path = "Target Support Files/Pods-PagingDatePicker_Tests";
+			sourceTree = "<group>";
+		};
+		8A6A39BCEF4546574D5E982FA19E00C7 /* DynamicColor */ = {
+			isa = PBXGroup;
+			children = (
+				6B5169929380E19C459EADB16C175760 /* DynamicColor.swift */,
+				7E38514FF9E67F0BB93523BD9F0DE893 /* HSL.swift */,
+				AB7C8636A67A068B31CAEF3D0A0442A9 /* Support Files */,
+			);
+			path = DynamicColor;
+			sourceTree = "<group>";
+		};
+		99FBF6A473FCFC0C58305480A8FE3552 /* RSDayFlow */ = {
+			isa = PBXGroup;
+			children = (
+				08262203924576614C89FE994FE5DFD0 /* NSCalendar+RSDFAdditions.h */,
+				293BD6843CDD228B077B3FEE352D73A4 /* NSCalendar+RSDFAdditions.m */,
+				D7EAE1C634B54659D824BC4897CBB8B8 /* RSDayFlow.h */,
+				D44A738509C31B23C04F2400AC5DCC7C /* RSDFDatePickerCollectionView.h */,
+				D69A4A4B0E1D1FC38F3D6C53892C9ECF /* RSDFDatePickerCollectionView.m */,
+				7970415103996806F0A540D06CA2DE8D /* RSDFDatePickerCollectionViewLayout.h */,
+				F79FD5816097611FB4FAF55AB80B9877 /* RSDFDatePickerCollectionViewLayout.m */,
+				7F9D5F3F49CB8993DF638D5EDC03B6D0 /* RSDFDatePickerDate.h */,
+				CBCD5BC9D3965036E1D91DCD3B5800C7 /* RSDFDatePickerDayCell.h */,
+				F984ABFDA0A39422903A11A2F939EFEC /* RSDFDatePickerDayCell.m */,
+				5D22358D802B860A1D8E74F0301AFCD5 /* RSDFDatePickerDaysOfWeekView.h */,
+				50C26D04E069831A9B2590FECF1DFD72 /* RSDFDatePickerDaysOfWeekView.m */,
+				9117A2E848BFD155D4F7DCE54758870B /* RSDFDatePickerMonthHeader.h */,
+				1D733497B610E2E2815634409D3B1702 /* RSDFDatePickerMonthHeader.m */,
+				1AC15F78EFA9A0348A5593F4F64EE15B /* RSDFDatePickerView.h */,
+				73E40838FE4EC3A933F433BE991DD1C1 /* RSDFDatePickerView.m */,
+				0187AF51D9C3A5AF7008553435A3DBE2 /* RSDFDatePickerView+Protected.h */,
+				2A689CF28B0212E11C549B8D25C417AB /* Support Files */,
+			);
+			path = RSDayFlow;
+			sourceTree = "<group>";
+		};
+		AB7C8636A67A068B31CAEF3D0A0442A9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA18DE0ABA8DDDC8E2E1E250D840C5B6 /* DynamicColor.modulemap */,
+				6F8555824569299278C5BB966EED9B6F /* DynamicColor.xcconfig */,
+				91B3A4E632EB7DFFB2D6FCB0E6C8D5E8 /* DynamicColor-dummy.m */,
+				0AB54B93592ADFEDD878E2ECE344C809 /* DynamicColor-prefix.pch */,
+				02BFB2D99FA275DB3357C2FAC7076752 /* DynamicColor-umbrella.h */,
+				DA2CEE101D0EE9B0B424301C9150F36E /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DynamicColor";
+			sourceTree = "<group>";
+		};
+		BB11937C466A77A0FD27FD7120F4CA34 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				20C4F943E4593AF711334353E93ACC67 /* Info.plist */,
+				F7087901B2F5E2818C62F5DF8C76A7AC /* PagingDatePicker.modulemap */,
+				3B375BA2E54A75891E0E178DCA9C45A9 /* PagingDatePicker.xcconfig */,
+				92074642D9EFD463BB118C1AEED0EAC0 /* PagingDatePicker-dummy.m */,
+				896C5C774191D025962C29CCF3BDDB84 /* PagingDatePicker-prefix.pch */,
+				5C62A86135A66712FD3FE6FD4245B7BD /* PagingDatePicker-umbrella.h */,
+				DC8893A7F06E1CDA92F07D838BE4252F /* ResourceBundle-PagingDatePicker-Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/PagingDatePicker";
+			sourceTree = "<group>";
+		};
+		CEABC706BC3AC003F281D291A1DBF5B7 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F0F454CC5A1B1F17FAA276931BE1F6B5 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		F0F454CC5A1B1F17FAA276931BE1F6B5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2FD2C1951CA2A43F0063351F /* DatePickerWithoutMonthView.swift */,
+				2FD2C18F1CA28E6E0063351F /* MonthPickerView.swift */,
+				2FD2C1971CA2A44F0063351F /* PagingDatePickerView.swift */,
+				2FD2C19B1CA2B0740063351F /* PagingDateAndMonthPickerView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FC2E467FEEA0BF567F3353BAD43C5E06 /* Pods-PagingDatePicker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				CDAA4C26A9C36B975AC193B89CF79C02 /* Info.plist */,
+				BF4BDDE7599C0E7465FAC3FD6030713F /* Pods-PagingDatePicker_Example.modulemap */,
+				E712D7C42C1F68D24AAFF314237F7D51 /* Pods-PagingDatePicker_Example-acknowledgements.markdown */,
+				BE162F5064B490FD8095F141EB034C4E /* Pods-PagingDatePicker_Example-acknowledgements.plist */,
+				0E076287CC56E2D3D75B91D3DDBA1A2D /* Pods-PagingDatePicker_Example-dummy.m */,
+				3EC37C5DAA3E1E9D89D62F059D062D1D /* Pods-PagingDatePicker_Example-frameworks.sh */,
+				462487EDCECF7E3D6FD0068FCC38CFAC /* Pods-PagingDatePicker_Example-resources.sh */,
+				5840075AE8081FD8E5EF9014C9FF934D /* Pods-PagingDatePicker_Example-umbrella.h */,
+				D292B568B030714923C55F962C2C5BD9 /* Pods-PagingDatePicker_Example.debug.xcconfig */,
+				8142B9807DDC1058967F95630D21277E /* Pods-PagingDatePicker_Example.release.xcconfig */,
+			);
+			name = "Pods-PagingDatePicker_Example";
+			path = "Target Support Files/Pods-PagingDatePicker_Example";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0585A035100D68B63E7815281748D1E3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D652704F132768925EC509ABB5E95D1B /* SwiftDate-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		571E3B4F17C98A04A40ED066FE689F2C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED0F0AC783770DF8B72D3A17B2F56609 /* NSCalendar+RSDFAdditions.h in Headers */,
+				D1840284C4934BBDA23837E123461B13 /* RSDayFlow-umbrella.h in Headers */,
+				AF825CD65D52477C8402D2397964D342 /* RSDayFlow.h in Headers */,
+				C30CDEE9E81020418A064983EB4E0FF4 /* RSDFDatePickerCollectionView.h in Headers */,
+				B996E14BA1F3AF6F4CD19843C151C6B3 /* RSDFDatePickerCollectionViewLayout.h in Headers */,
+				BEB896594BE341C570F2C901EBBD3865 /* RSDFDatePickerDate.h in Headers */,
+				4575CC77D299C93E481216D61F154DBD /* RSDFDatePickerDayCell.h in Headers */,
+				8A9AA4EB91C060A398C86A903084A446 /* RSDFDatePickerDaysOfWeekView.h in Headers */,
+				7CB20789DCCD5FE4F403B2BDD16FEB3C /* RSDFDatePickerMonthHeader.h in Headers */,
+				BFDD3F678AD8EE7322D21CFA80D023DB /* RSDFDatePickerView+Protected.h in Headers */,
+				FD12A0A1251672816EF26F4BDF6645E7 /* RSDFDatePickerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B297E9F9C45C39E83D2CF06A89188B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1EAD0A9E9B67AEAB1BD2615B0BAAB0 /* Pods-PagingDatePicker_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5422E7FD29EB8A1E2F78AA0F49B54F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D8E19E44EAF278FCC2D55228E4B2C8F /* PagingDatePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD7231EDA24F70411F42E6452B8618E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18E938F95DB58AF7A4E933D7BD645F0B /* DynamicColor-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7A3BA344F01E2E17D6ABA74868B195E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724DDC05F74C4F272792F30793FA5B1D /* Pods-PagingDatePicker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		08F6A5AF8E89681F880EB03F167AACB7 /* DynamicColor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC4702B144C514B41D51E60E93CA52C5 /* Build configuration list for PBXNativeTarget "DynamicColor" */;
+			buildPhases = (
+				C8D6A9BD06E5CEFF7F6CD051253FDE6C /* Sources */,
+				2238FCD94A4DA0978EF3DBA51EAB157A /* Frameworks */,
+				CD7231EDA24F70411F42E6452B8618E5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicColor;
+			productName = DynamicColor;
+			productReference = C68CB5E92ADC5D513E8C3879B96C52D1 /* DynamicColor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		48A365DBDEA3A45E3B1D2373E8891BB3 /* Pods-PagingDatePicker_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E3F6F6B7D0D75A5ECBE88934A0CC646 /* Build configuration list for PBXNativeTarget "Pods-PagingDatePicker_Tests" */;
+			buildPhases = (
+				046C3B9A3DF8DB839C51993686251D40 /* Sources */,
+				17E47E7343FE16DDA4EF80D74F5594AD /* Frameworks */,
+				8B297E9F9C45C39E83D2CF06A89188B4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6003D5B14FF98E044917F4F7D21E315 /* PBXTargetDependency */,
+				354BEFB7E064B968BCF3B6C7EDB4E12A /* PBXTargetDependency */,
+				844B9BF8C5A2A829CF1F865D86BA3DA1 /* PBXTargetDependency */,
+				BC3F76437369C2BA9A5C2C6D2828F199 /* PBXTargetDependency */,
+			);
+			name = "Pods-PagingDatePicker_Tests";
+			productName = "Pods-PagingDatePicker_Tests";
+			productReference = 324D065E651C99749F191E0070AD84FA /* Pods_PagingDatePicker_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7AA9129346FA34FE87B085243DF1F38F /* SwiftDate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A132C43BA286A748D3F7ECBACF28ACA5 /* Build configuration list for PBXNativeTarget "SwiftDate" */;
+			buildPhases = (
+				64DAFEC96931E82806E6781257A62FC9 /* Sources */,
+				C9CFC222E7B03222C4578DED932CA698 /* Frameworks */,
+				0585A035100D68B63E7815281748D1E3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftDate;
+			productName = SwiftDate;
+			productReference = 2FAF217218EBBBA3A55F061B93011511 /* SwiftDate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		850BD358D7E2C33E603C6A3FA517ED48 /* RSDayFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D263542298C867ABD1CB7A5911023C7E /* Build configuration list for PBXNativeTarget "RSDayFlow" */;
+			buildPhases = (
+				384ABC6491442F90548368CF39E3D0D0 /* Sources */,
+				BD0516FC9308BAE84911EA844176F343 /* Frameworks */,
+				571E3B4F17C98A04A40ED066FE689F2C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RSDayFlow;
+			productName = RSDayFlow;
+			productReference = 5CF9702DEE4D6BAAE65A27C11E6B62F6 /* RSDayFlow.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AA455BA524173C4958EA7B372CC7EEF2 /* PagingDatePicker-PagingDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 192C8E906793D3BCE2288525009CBFA5 /* Build configuration list for PBXNativeTarget "PagingDatePicker-PagingDatePicker" */;
+			buildPhases = (
+				8901CD93F501A082FF2653B26F3A4569 /* Sources */,
+				A198CA095F8C439818F0B52C20CBE4E5 /* Frameworks */,
+				7229B9F03CDD0C0515CDBA62DE7CCAE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PagingDatePicker-PagingDatePicker";
+			productName = "PagingDatePicker-PagingDatePicker";
+			productReference = 9D5B3749E758056A95E0C2C156E582B1 /* PagingDatePicker.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		E2B251AA998A17AEB2256F9E4E5D6A4E /* PagingDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71331479D69A677DF6167717F7EF16D7 /* Build configuration list for PBXNativeTarget "PagingDatePicker" */;
+			buildPhases = (
+				1B47B4F0FC30442E7EA4D54A75206013 /* Sources */,
+				2D459736CA13528A2D0CA06A9416FA9F /* Frameworks */,
+				AF00871B95EE0402229A66C183239466 /* Resources */,
+				C5422E7FD29EB8A1E2F78AA0F49B54F3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEC4EB6985EA0379944B721303CF5580 /* PBXTargetDependency */,
+				7EAEBBB2FE64AAE7174036BCD6B240AC /* PBXTargetDependency */,
+				89D2A4A9ACE4147B64D5C45ABD1B2253 /* PBXTargetDependency */,
+				7155BCE33EBB836354055194088D308F /* PBXTargetDependency */,
+			);
+			name = PagingDatePicker;
+			productName = PagingDatePicker;
+			productReference = FFEE43FCACDF7C6717EBE752D6FAF289 /* PagingDatePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F368F3EEA1CDB6386275B4E60555474B /* Pods-PagingDatePicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F0D6C236119A5FA5586FD429EAB6CD0 /* Build configuration list for PBXNativeTarget "Pods-PagingDatePicker_Example" */;
+			buildPhases = (
+				7A52E9833296BAEF720AFC447173F9D0 /* Sources */,
+				C81CEAF6463B1E34358D6B72D57F667E /* Frameworks */,
+				F7A3BA344F01E2E17D6ABA74868B195E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9714C17D1A9FB10550382A211E3A1BA6 /* PBXTargetDependency */,
+				A7859D2FC4A19668D7115A7548DB70F1 /* PBXTargetDependency */,
+				E29A66D14E58D648D4C9FD861E3CE683 /* PBXTargetDependency */,
+				A1A62A3E6B4FFBD9518431B5DC304A16 /* PBXTargetDependency */,
+			);
+			name = "Pods-PagingDatePicker_Example";
+			productName = "Pods-PagingDatePicker_Example";
+			productReference = 7CD29DEE1105C1833E5085CB9444AB1E /* Pods_PagingDatePicker_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 6CAFF5FD510BE162160DBEA4634FE367 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08F6A5AF8E89681F880EB03F167AACB7 /* DynamicColor */,
+				E2B251AA998A17AEB2256F9E4E5D6A4E /* PagingDatePicker */,
+				AA455BA524173C4958EA7B372CC7EEF2 /* PagingDatePicker-PagingDatePicker */,
+				F368F3EEA1CDB6386275B4E60555474B /* Pods-PagingDatePicker_Example */,
+				48A365DBDEA3A45E3B1D2373E8891BB3 /* Pods-PagingDatePicker_Tests */,
+				850BD358D7E2C33E603C6A3FA517ED48 /* RSDayFlow */,
+				7AA9129346FA34FE87B085243DF1F38F /* SwiftDate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7229B9F03CDD0C0515CDBA62DE7CCAE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF00871B95EE0402229A66C183239466 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B99CB997708144B581F556D8DA2AFB /* PagingDatePicker.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		046C3B9A3DF8DB839C51993686251D40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5269EE17F944FEE70FA961C65758B25E /* Pods-PagingDatePicker_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B47B4F0FC30442E7EA4D54A75206013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				434A2DBA99834E4E9509CC6F4DA78FEC /* PagingDatePicker-dummy.m in Sources */,
+				2FD2C1961CA2A43F0063351F /* DatePickerWithoutMonthView.swift in Sources */,
+				2FD2C1901CA28E6E0063351F /* MonthPickerView.swift in Sources */,
+				2FD2C19C1CA2B0740063351F /* PagingDateAndMonthPickerView.swift in Sources */,
+				2FD2C1981CA2A44F0063351F /* PagingDatePickerView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		384ABC6491442F90548368CF39E3D0D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC494FAB638A9A1D38B38FBE67993B82 /* NSCalendar+RSDFAdditions.m in Sources */,
+				D9A99C120A1605DABC50B04AF7D3127B /* RSDayFlow-dummy.m in Sources */,
+				5575C851E58C6C0A771BBCB278863E21 /* RSDFDatePickerCollectionView.m in Sources */,
+				035F413261A11C1E418EB59CAA5010BA /* RSDFDatePickerCollectionViewLayout.m in Sources */,
+				CF40F646F2AFC462800CFD709C537BEC /* RSDFDatePickerDayCell.m in Sources */,
+				4E3B2FEE8D15A3644225D73DD39F84C5 /* RSDFDatePickerDaysOfWeekView.m in Sources */,
+				8AB8D32572D8752964BE051499A41490 /* RSDFDatePickerMonthHeader.m in Sources */,
+				A1939491C67FD06029B4969C468127AD /* RSDFDatePickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64DAFEC96931E82806E6781257A62FC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C2E7E07E7C6774B989C93B1B17B94AB /* Additions.swift in Sources */,
+				A218AF4F5770732D7E4A27756374D0D6 /* DateInRegion+Comparisons.swift in Sources */,
+				092D9FA4AD3D26D1E8F69B622D8BE5D9 /* DateInRegion+Components.swift in Sources */,
+				6EF338F95CC1540607FDFCB409E740DE /* DateInRegion+Equations.swift in Sources */,
+				F8D636086FC13D416EDE059798A5F8D7 /* DateInRegion+Formatter.swift in Sources */,
+				51EBEE09D1F69C7C0A5BBF671DC46671 /* DateInRegion+NSDatePort.swift in Sources */,
+				3A5362B3BED60311BBA18945FF3C3335 /* DateInRegion+Operations.swift in Sources */,
+				D23629AD907FA755679C0E8EF40AA34B /* DateInRegion+StartEnd.swift in Sources */,
+				5F00BB60192A5C7E66DEB628A9A0661D /* DateInRegion.swift in Sources */,
+				DB0AFF66A98C4D6876A7CD3F56ACABB5 /* Dictionary+SwiftDate.swift in Sources */,
+				C0D44A1D1C527612E75457DBFF0C5C9D /* NSCalendar+SwiftDate.swift in Sources */,
+				E46D206FE156F77676FAD1669BAE9DA2 /* NSDate+SwiftDate.swift in Sources */,
+				3B9DEB200A63E4C45048D9838C4AC9EE /* NSDateComponents+SwiftDate.swift in Sources */,
+				782F0E702D122C413B91D00FA0C83E5D /* NSDateFormatter+SwiftDate.swift in Sources */,
+				BF95D6BF916FC321D38B9BA7C1EAF299 /* NSDateInterval.swift in Sources */,
+				63D39ED9BC1092207B84089C3D102E5F /* NSLocale+SwiftDate.swift in Sources */,
+				64B99D76EB34C121D911814FB4389865 /* NSTimeInterval+SwiftDate.swift in Sources */,
+				3D2A24B91E2D5899BDE7BD4AF22C23C3 /* NSTimeZone+SwiftDate.swift in Sources */,
+				76254D54AAAD0FD7A443155B2ACA7E26 /* Region.swift in Sources */,
+				8B58CE18D6F5424AD25C61A9C9175960 /* SwiftDate-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A52E9833296BAEF720AFC447173F9D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94C65AB59EE697609482F49C5EA7B024 /* Pods-PagingDatePicker_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8901CD93F501A082FF2653B26F3A4569 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8D6A9BD06E5CEFF7F6CD051253FDE6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDAE2730611AEF6250382CE67A9AD99A /* DynamicColor-dummy.m in Sources */,
+				62E29425E2735EDFB2FEB127813F4D33 /* DynamicColor.swift in Sources */,
+				560643B27617038512AA64E271DD78C3 /* HSL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		354BEFB7E064B968BCF3B6C7EDB4E12A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PagingDatePicker;
+			target = E2B251AA998A17AEB2256F9E4E5D6A4E /* PagingDatePicker */;
+			targetProxy = B30AFAB65B0A67C3C6D8A42743A2EB8A /* PBXContainerItemProxy */;
+		};
+		7155BCE33EBB836354055194088D308F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftDate;
+			target = 7AA9129346FA34FE87B085243DF1F38F /* SwiftDate */;
+			targetProxy = 16CE03E8C2465CFDC0F6E592A420D1CA /* PBXContainerItemProxy */;
+		};
+		7EAEBBB2FE64AAE7174036BCD6B240AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PagingDatePicker-PagingDatePicker";
+			target = AA455BA524173C4958EA7B372CC7EEF2 /* PagingDatePicker-PagingDatePicker */;
+			targetProxy = 2EA09CB652EF5C16475CCA925FF96294 /* PBXContainerItemProxy */;
+		};
+		844B9BF8C5A2A829CF1F865D86BA3DA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSDayFlow;
+			target = 850BD358D7E2C33E603C6A3FA517ED48 /* RSDayFlow */;
+			targetProxy = C7344065E96AD3B1E74E23B57CC6CC36 /* PBXContainerItemProxy */;
+		};
+		89D2A4A9ACE4147B64D5C45ABD1B2253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSDayFlow;
+			target = 850BD358D7E2C33E603C6A3FA517ED48 /* RSDayFlow */;
+			targetProxy = C3445BFC51B629756E7F48E4D4BD57C1 /* PBXContainerItemProxy */;
+		};
+		9714C17D1A9FB10550382A211E3A1BA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynamicColor;
+			target = 08F6A5AF8E89681F880EB03F167AACB7 /* DynamicColor */;
+			targetProxy = A9AB9E28BDC4DDB17F4D478C7889638A /* PBXContainerItemProxy */;
+		};
+		A1A62A3E6B4FFBD9518431B5DC304A16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftDate;
+			target = 7AA9129346FA34FE87B085243DF1F38F /* SwiftDate */;
+			targetProxy = 1909C588B91033B245FB7B16A6684E0A /* PBXContainerItemProxy */;
+		};
+		A7859D2FC4A19668D7115A7548DB70F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = PagingDatePicker;
+			target = E2B251AA998A17AEB2256F9E4E5D6A4E /* PagingDatePicker */;
+			targetProxy = FB293968A1E4C8A9212FFB97E2530FD0 /* PBXContainerItemProxy */;
+		};
+		BC3F76437369C2BA9A5C2C6D2828F199 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftDate;
+			target = 7AA9129346FA34FE87B085243DF1F38F /* SwiftDate */;
+			targetProxy = 6F1781B21E4CD180C264CE12D46C3A74 /* PBXContainerItemProxy */;
+		};
+		BEC4EB6985EA0379944B721303CF5580 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynamicColor;
+			target = 08F6A5AF8E89681F880EB03F167AACB7 /* DynamicColor */;
+			targetProxy = 3B7C0610A179DB0FC0CDDCDDF6BD542E /* PBXContainerItemProxy */;
+		};
+		E29A66D14E58D648D4C9FD861E3CE683 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSDayFlow;
+			target = 850BD358D7E2C33E603C6A3FA517ED48 /* RSDayFlow */;
+			targetProxy = CC073F0270F742DBC54C614DC5A20318 /* PBXContainerItemProxy */;
+		};
+		E6003D5B14FF98E044917F4F7D21E315 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DynamicColor;
+			target = 08F6A5AF8E89681F880EB03F167AACB7 /* DynamicColor */;
+			targetProxy = F9D8B7960F228143695AAC9423640518 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		086093513FC2E754358703493CD19311 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D292B568B030714923C55F962C2C5BD9 /* Pods-PagingDatePicker_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PagingDatePicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PagingDatePicker_Example/Pods-PagingDatePicker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PagingDatePicker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		14E7270F97C7167029D1E217E2D6E6B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B375BA2E54A75891E0E178DCA9C45A9 /* PagingDatePicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PagingDatePicker/PagingDatePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PagingDatePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PagingDatePicker/PagingDatePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PagingDatePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1A19E825997D632F017B1D1AF46DCF04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B375BA2E54A75891E0E178DCA9C45A9 /* PagingDatePicker.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PagingDatePicker/PagingDatePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PagingDatePicker/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PagingDatePicker/PagingDatePicker.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = PagingDatePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		23D7D5029BB8B76A68DC3ABF8A67FA0F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE5ABF07906AC3F7ADC4388734A347CC /* Pods-PagingDatePicker_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PagingDatePicker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PagingDatePicker_Tests/Pods-PagingDatePicker_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PagingDatePicker_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		25157DF1F73CB6FD1E7ABDA73101596D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B375BA2E54A75891E0E178DCA9C45A9 /* PagingDatePicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/PagingDatePicker/ResourceBundle-PagingDatePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = PagingDatePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		372FF5048FF42C3A7A18B70A30D785C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EAFBD7452B51CA2B62271C00487978B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F8555824569299278C5BB966EED9B6F /* DynamicColor.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicColor/DynamicColor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynamicColor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DynamicColor/DynamicColor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = DynamicColor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		608E3C92385D8E8ADF3352FC4D5E2E68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEAB41845CD71B43A7AA2AA4CE394F49 /* RSDayFlow.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSDayFlow/RSDayFlow-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSDayFlow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSDayFlow/RSDayFlow.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RSDayFlow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6C29F821F6666C6278EB8E1A37B910A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEAB41845CD71B43A7AA2AA4CE394F49 /* RSDayFlow.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RSDayFlow/RSDayFlow-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RSDayFlow/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RSDayFlow/RSDayFlow.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RSDayFlow;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70F0378D63DE3D2DCC739550669BD46A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7D392E1A349D75AE6097EE9E3BEE8FDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8142B9807DDC1058967F95630D21277E /* Pods-PagingDatePicker_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PagingDatePicker_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PagingDatePicker_Example/Pods-PagingDatePicker_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PagingDatePicker_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		877BD561A9E0EF6440EBABA9B63673FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F8555824569299278C5BB966EED9B6F /* DynamicColor.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/DynamicColor/DynamicColor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DynamicColor/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/DynamicColor/DynamicColor.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = DynamicColor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AE77E9D96B2D9580E559ADB66591B196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F19D1C05B5E7A226E4185E20A217500 /* SwiftDate.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftDate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B42EEA2C83750D94883485FA07E67AA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F19D1C05B5E7A226E4185E20A217500 /* SwiftDate.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftDate/SwiftDate-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftDate/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftDate/SwiftDate.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftDate;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D212B6194A305894EC2FD89B89C5CCC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92434C8DD2FFB4C44AB6DDFE02FD67F4 /* Pods-PagingDatePicker_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PagingDatePicker_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PagingDatePicker_Tests/Pods-PagingDatePicker_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_PagingDatePicker_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FC8DF922B69250C15FCB9202C159009C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B375BA2E54A75891E0E178DCA9C45A9 /* PagingDatePicker.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/PagingDatePicker/ResourceBundle-PagingDatePicker-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = PagingDatePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		192C8E906793D3BCE2288525009CBFA5 /* Build configuration list for PBXNativeTarget "PagingDatePicker-PagingDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25157DF1F73CB6FD1E7ABDA73101596D /* Debug */,
+				FC8DF922B69250C15FCB9202C159009C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70F0378D63DE3D2DCC739550669BD46A /* Debug */,
+				372FF5048FF42C3A7A18B70A30D785C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E3F6F6B7D0D75A5ECBE88934A0CC646 /* Build configuration list for PBXNativeTarget "Pods-PagingDatePicker_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D212B6194A305894EC2FD89B89C5CCC5 /* Debug */,
+				23D7D5029BB8B76A68DC3ABF8A67FA0F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F0D6C236119A5FA5586FD429EAB6CD0 /* Build configuration list for PBXNativeTarget "Pods-PagingDatePicker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				086093513FC2E754358703493CD19311 /* Debug */,
+				7D392E1A349D75AE6097EE9E3BEE8FDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71331479D69A677DF6167717F7EF16D7 /* Build configuration list for PBXNativeTarget "PagingDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A19E825997D632F017B1D1AF46DCF04 /* Debug */,
+				14E7270F97C7167029D1E217E2D6E6B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A132C43BA286A748D3F7ECBACF28ACA5 /* Build configuration list for PBXNativeTarget "SwiftDate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE77E9D96B2D9580E559ADB66591B196 /* Debug */,
+				B42EEA2C83750D94883485FA07E67AA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D263542298C867ABD1CB7A5911023C7E /* Build configuration list for PBXNativeTarget "RSDayFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C29F821F6666C6278EB8E1A37B910A9 /* Debug */,
+				608E3C92385D8E8ADF3352FC4D5E2E68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC4702B144C514B41D51E60E93CA52C5 /* Build configuration list for PBXNativeTarget "DynamicColor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EAFBD7452B51CA2B62271C00487978B /* Debug */,
+				877BD561A9E0EF6440EBABA9B63673FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
