@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'PagingDatePicker_Example' do
+  pod 'PagingDatePicker', :path => '../'
+end
+
+target 'PagingDatePicker_Tests' do
+  pod 'PagingDatePicker', :path => '../'
+
+  
+end
