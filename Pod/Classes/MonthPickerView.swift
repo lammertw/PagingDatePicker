@@ -166,8 +166,6 @@ public class MonthPickerView: UIView {
         }
 
         let indexPath = NSIndexPath(forItem: itemIndexForDate(scrollToDate), inSection: 0)
-
-        guard let attributes = collectionView.layoutAttributesForItemAtIndexPath(indexPath) else { return }
         collectionView.scrollToItemAtIndexPath(indexPath, atScrollPosition: .CenteredHorizontally, animated: animated)
 
         selectedDate = scrollToDate
