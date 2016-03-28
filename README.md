@@ -1,6 +1,6 @@
 # PagingDatePicker
 
-[![CI Status](http://img.shields.io/travis/Lammert Westerhoff/PagingDatePicker.svg?style=flat)](https://travis-ci.org/Lammert Westerhoff/PagingDatePicker)
+[![CI Status](http://img.shields.io/travis/lammertw/PagingDatePicker.svg?style=flat)](https://travis-ci.org/Lammert Westerhoff/PagingDatePicker)
 [![Version](https://img.shields.io/cocoapods/v/PagingDatePicker.svg?style=flat)](http://cocoapods.org/pods/PagingDatePicker)
 [![License](https://img.shields.io/cocoapods/l/PagingDatePicker.svg?style=flat)](http://cocoapods.org/pods/PagingDatePicker)
 [![Platform](https://img.shields.io/cocoapods/p/PagingDatePicker.svg?style=flat)](http://cocoapods.org/pods/PagingDatePicker)
