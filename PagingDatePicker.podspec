@@ -10,15 +10,9 @@ Pod::Spec.new do |s|
   s.name             = "PagingDatePicker"
   s.version          = "0.1.0"
   s.summary          = "A calendar view date picker with paging."
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
   This library consists of two components that can be used on it's own or together. 
-  One is a swipable month picker and the other is a paging calendar date picker showing one month on each page. 
+  One is a swipeable month picker and the other is a paging calendar date picker showing one month on each page.
   The month picker can be used as navigation header for the calendar date picker.
                        DESC
 

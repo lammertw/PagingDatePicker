@@ -21,9 +21,9 @@ public class DatePickerWithoutMonthView: RSDFDatePickerView {
 
 }
 
-private class DatePickerWithoutMonthCollectionViewLayout: RSDFDatePickerCollectionViewLayout {
+public class DatePickerWithoutMonthCollectionViewLayout: RSDFDatePickerCollectionViewLayout {
 
-    override func selfHeaderReferenceSize() -> CGSize {
+    override public func selfHeaderReferenceSize() -> CGSize {
         return CGSize(width: 1, height: 1)
     }
 

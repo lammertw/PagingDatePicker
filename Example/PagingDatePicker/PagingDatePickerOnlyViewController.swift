@@ -26,6 +26,7 @@ class PagingDatePickerOnlyViewController: UIViewController {
         super.viewDidLoad()
 
         datePickerView.delegate = self
+        datePickerView.datePickerViewDelegate = self
     }
 
 
@@ -37,6 +38,9 @@ extension PagingDatePickerOnlyViewController: PagingDatePickerViewDelegate {
     func pagingDatePickerView(pagingDatePickerView: PagingDatePickerView, didPageToMonthDate date: NSDate) {
         monthLabel.text = monthFormatter.stringFromDate(date)
     }
+}
+
+extension PagingDatePickerOnlyViewController: RSDFDatePickerViewDelegate {
 
     func datePickerView(view: RSDFDatePickerView!, didSelectDate date: NSDate!) {
         dateLabel.text = NSDateFormatter.localizedStringFromDate(date, dateStyle: .MediumStyle, timeStyle: .NoStyle)

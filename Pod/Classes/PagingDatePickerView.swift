@@ -10,9 +10,10 @@ import UIKit
 import RSDayFlow
 import SwiftDate
 
-public protocol PagingDatePickerViewDelegate: class {
+@objc public protocol PagingDatePickerViewDelegate: class {
 
-    func pagingDatePickerView(pagingDatePickerView: PagingDatePickerView, didPageToMonthDate date: NSDate)
+    optional func pagingDatePickerView(pagingDatePickerView: PagingDatePickerView, didCreateDatePickerView datePickerView: RSDFDatePickerView, forMonthDate date: NSDate)
+    optional func pagingDatePickerView(pagingDatePickerView: PagingDatePickerView, didPageToMonthDate date: NSDate)
 }
 
 public class PagingDatePickerView: UIView {
@@ -22,6 +23,17 @@ public class PagingDatePickerView: UIView {
     public var transitionStyle = UIPageViewControllerTransitionStyle.Scroll
 
     public weak var delegate: PagingDatePickerViewDelegate?
+
+    public var startDate: NSDate? {
+        didSet {
+            pagingDatePickerPageViewController.startDate = startDate
+        }
+    }
+    public var endDate: NSDate? {
+        didSet {
+            pagingDatePickerPageViewController.endDate = endDate
+        }
+    }
 
     public weak var datePickerViewDelegate: RSDFDatePickerViewDelegate? {
         didSet {
@@ -42,6 +54,8 @@ public class PagingDatePickerView: UIView {
     private lazy var pagingDatePickerPageViewController: PagingDatePickerPageViewController = {
         let vc = PagingDatePickerPageViewController(transitionStyle: self.transitionStyle, navigationOrientation: .Horizontal, options: [:], datePickerViewClass: self.datePickerViewClass)
         vc.pagingDatePickerViewDelegate = self
+        vc.startDate = self.startDate
+        vc.endDate = self.endDate
         vc.datePickerViewDelegate = self.datePickerViewDelegate
         vc.datePickerViewDataSource = self.datePickerViewDataSource
         self.addSubview(vc.view)
@@ -52,17 +66,26 @@ public class PagingDatePickerView: UIView {
         pagingDatePickerPageViewController.view.frame = bounds
     }
 
-    public func scrollToDate(date: NSDate) {
-        pagingDatePickerPageViewController.scrollToDate(date)
+    public func scrollToDate(date: NSDate, reload: Bool = false, animated: Bool = true) {
+        pagingDatePickerPageViewController.scrollToDate(date, reload: reload, animated: animated)
     }
 }
 
 extension PagingDatePickerView: PagingDatePickerPageViewControllerDelegate {
+
+    func pagingDatePickerViewControllerDidCreateDatePickerView(datePickerView: RSDFDatePickerView, forMonth date: NSDate) {
+        delegate?.pagingDatePickerView?(self, didCreateDatePickerView: datePickerView, forMonthDate: date)
+    }
+
     public func pagingDatePickerViewControllerDidScrollToDate(date: NSDate) {
-        delegate?.pagingDatePickerView(self, didPageToMonthDate: date)
+        delegate?.pagingDatePickerView?(self, didPageToMonthDate: date)
     }
 }
 
+protocol PagingDatePickerViewControllerDelegate: class {
+
+    func pagingDatePickerViewController(pagingDatePickerViewController: PagingDatePickerViewController, didCreateDatePickerView datePickerView: RSDFDatePickerView, forMonth date: NSDate)
+}
 
 class PagingDatePickerViewController: UIViewController {
 
@@ -72,6 +95,7 @@ class PagingDatePickerViewController: UIViewController {
 
     weak var datePickerViewDelegate: RSDFDatePickerViewDelegate?
     weak var datePickerViewDataSource: RSDFDatePickerViewDataSource?
+    weak var delegate: PagingDatePickerViewControllerDelegate?
 
     private init(date: NSDate, datePickerViewClass: RSDFDatePickerView.Type) {
         self.date = date
@@ -87,6 +111,7 @@ class PagingDatePickerViewController: UIViewController {
         let datePickerView = datePickerViewClass.init(frame: CGRectNull, calendar: nil, startDate: date.startOf(.Month), endDate: date.endOf(.Month))
         datePickerView.delegate = datePickerViewDelegate
         datePickerView.dataSource = datePickerViewDataSource
+        delegate?.pagingDatePickerViewController(self, didCreateDatePickerView: datePickerView, forMonth: date)
         view = datePickerView
     }
 
@@ -94,6 +119,7 @@ class PagingDatePickerViewController: UIViewController {
 
 protocol PagingDatePickerPageViewControllerDelegate: class {
 
+    func pagingDatePickerViewControllerDidCreateDatePickerView(datePickerView: RSDFDatePickerView, forMonth date: NSDate)
     func pagingDatePickerViewControllerDidScrollToDate(date: NSDate)
 }
 
@@ -111,6 +137,9 @@ class PagingDatePickerPageViewController: UIPageViewController {
         super.init(transitionStyle: style, navigationOrientation: navigationOrientation, options: options)
     }
 
+    var startDate: NSDate?
+    var endDate: NSDate?
+
     required public init?(coder: NSCoder) {
         super.init(coder: coder)
     }
@@ -119,11 +148,19 @@ class PagingDatePickerPageViewController: UIPageViewController {
         return (viewControllers?.first as? PagingDatePickerViewController)?.date
     }
 
-    private func pagingDatePickerViewController(date: NSDate) -> PagingDatePickerViewController {
-        let vc = PagingDatePickerViewController(date: date, datePickerViewClass: datePickerViewClass)
-        vc.datePickerViewDelegate = datePickerViewDelegate
-        vc.datePickerViewDataSource = datePickerViewDataSource
-        return vc
+    private func firstPagingDatePickerViewController() -> PagingDatePickerViewController? {
+        return pagingDatePickerViewController(NSDate()) ?? startDate.flatMap(pagingDatePickerViewController)
+    }
+
+    private func pagingDatePickerViewController(date: NSDate) -> PagingDatePickerViewController? {
+        if startDate <= date && endDate == nil || endDate >= date {
+            let vc = PagingDatePickerViewController(date: date, datePickerViewClass: datePickerViewClass)
+            vc.datePickerViewDelegate = datePickerViewDelegate
+            vc.datePickerViewDataSource = datePickerViewDataSource
+            vc.delegate = self
+            return vc
+        }
+        return nil
     }
 
     override public func viewDidLoad() {
@@ -131,27 +168,38 @@ class PagingDatePickerPageViewController: UIPageViewController {
         self.dataSource = self
         self.delegate = self
 
-        setViewControllers([pagingDatePickerViewController(NSDate())], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
-        _ = currentDate.map { pagingDatePickerViewDelegate?.pagingDatePickerViewControllerDidScrollToDate($0) }
+        if let viewController = firstPagingDatePickerViewController() {
+            setViewControllers([viewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+            _ = currentDate.map { pagingDatePickerViewDelegate?.pagingDatePickerViewControllerDidScrollToDate($0) }
+        }
     }
 
-    func scrollToDate(date: NSDate) {
-        if let currentDate = currentDate where currentDate.startOf(.Month) != date.startOf(.Month) {
-            setViewControllers([pagingDatePickerViewController(date)], direction: date > currentDate ? .Forward : .Reverse, animated: true, completion: nil)
+    func scrollToDate(date: NSDate, fallbackToStartDate: Bool = true, reload: Bool = false, animated: Bool = true) {
+        if let currentDate = currentDate where reload || currentDate.startOf(.Month) != date.startOf(.Month) {
+            if let vc = pagingDatePickerViewController(date) ?? (fallbackToStartDate ? startDate.flatMap(pagingDatePickerViewController) : nil) {
+                setViewControllers([vc], direction: date > currentDate ? .Forward : .Reverse, animated: true, completion: nil)
+            }
         }
+    }
+}
+
+extension PagingDatePickerPageViewController: PagingDatePickerViewControllerDelegate {
+
+    func pagingDatePickerViewController(pagingDatePickerViewController: PagingDatePickerViewController, didCreateDatePickerView datePickerView: RSDFDatePickerView, forMonth date: NSDate) {
+        pagingDatePickerViewDelegate?.pagingDatePickerViewControllerDidCreateDatePickerView(datePickerView, forMonth: date)
     }
 }
 
 extension PagingDatePickerPageViewController: UIPageViewControllerDataSource {
 
     public func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        return ((viewController as? PagingDatePickerViewController)?.date).map {
+        return ((viewController as? PagingDatePickerViewController)?.date).flatMap {
             pagingDatePickerViewController($0 - 1.months)
         }
     }
 
     public func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
-        return ((viewController as? PagingDatePickerViewController)?.date).map {
+        return ((viewController as? PagingDatePickerViewController)?.date).flatMap {
             pagingDatePickerViewController($0 + 1.months)
         }
     }

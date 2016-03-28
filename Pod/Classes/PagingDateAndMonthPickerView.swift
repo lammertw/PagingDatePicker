@@ -14,21 +14,26 @@ public class PagingDateAndMonthPickerView: UIView {
 
     public var datePickerViewClass = DatePickerWithoutMonthView.self
 
-    public lazy var monthPickerView: MonthPickerView = {
+    private lazy var monthPickerView: MonthPickerView = {
         let view = MonthPickerView(frame: CGRectNull)
-        view.delegate = self
         self.addSubview(view)
         return view
     }()
 
     public var transitionStyle = UIPageViewControllerTransitionStyle.Scroll
 
-    public lazy var datePickerView: PagingDatePickerView = {
+    private lazy var datePickerView: PagingDatePickerView = {
         let view = PagingDatePickerView(frame: CGRectNull)
         view.datePickerViewClass = self.datePickerViewClass
-        view.delegate = self
         self.addSubview(view)
         return view
+    }()
+
+    public lazy var datePickerViewControl: PagingDateAndMonthPickerViewControl = {
+        let control = PagingDateAndMonthPickerViewControl()
+        control.monthPickerView = self.monthPickerView
+        control.datePickerView = self.datePickerView
+        return control
     }()
 
     override init(frame: CGRect) {
@@ -40,20 +45,42 @@ public class PagingDateAndMonthPickerView: UIView {
     }
 
     public override func layoutSubviews() {
-        monthPickerView.frame = CGRectMake(0, 0, CGRectGetWidth(bounds), monthPickerHeight)
-        datePickerView.frame = CGRectMake(0, monthPickerHeight, CGRectGetWidth(bounds), CGRectGetHeight(bounds) - monthPickerHeight)
+        datePickerViewControl.monthPickerView.frame = CGRectMake(0, 0, CGRectGetWidth(bounds), monthPickerHeight)
+        datePickerViewControl.datePickerView.frame = CGRectMake(0, monthPickerHeight, CGRectGetWidth(bounds), CGRectGetHeight(bounds) - monthPickerHeight)
     }
 
 }
 
-extension PagingDateAndMonthPickerView: MonthPickerViewDelegate {
+public class PagingDateAndMonthPickerViewControl: NSObject {
+
+    public var datePickerViewClass = DatePickerWithoutMonthView.self {
+        didSet {
+            datePickerView?.datePickerViewClass = datePickerViewClass
+        }
+    }
+
+    @IBOutlet public var monthPickerView: MonthPickerView! {
+        didSet {
+            monthPickerView.delegate = self
+        }
+    }
+
+    @IBOutlet public var datePickerView: PagingDatePickerView! {
+        didSet {
+            datePickerView.datePickerViewClass = datePickerViewClass
+            datePickerView.delegate = self
+        }
+    }
+}
+
+extension PagingDateAndMonthPickerViewControl: MonthPickerViewDelegate {
 
     public func monthPickerView(monthPickerView: MonthPickerView, didSelectDate date: NSDate) {
         datePickerView.scrollToDate(date)
     }
 }
 
-extension PagingDateAndMonthPickerView: PagingDatePickerViewDelegate {
+extension PagingDateAndMonthPickerViewControl: PagingDatePickerViewDelegate {
 
     public func pagingDatePickerView(pagingDatePickerView: PagingDatePickerView, didPageToMonthDate date: NSDate) {
         monthPickerView.scrollToDate(date, animated: true)
