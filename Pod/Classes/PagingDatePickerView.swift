@@ -140,7 +140,7 @@ class PagingDatePickerPageViewController: UIPageViewController {
     var startDate: NSDate?
     var endDate: NSDate?
 
-    required public init?(coder: NSCoder) {
+    required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
 
@@ -163,7 +163,7 @@ class PagingDatePickerPageViewController: UIPageViewController {
         return nil
     }
 
-    override public func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         self.dataSource = self
         self.delegate = self
@@ -192,13 +192,13 @@ extension PagingDatePickerPageViewController: PagingDatePickerViewControllerDele
 
 extension PagingDatePickerPageViewController: UIPageViewControllerDataSource {
 
-    public func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
+    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         return ((viewController as? PagingDatePickerViewController)?.date).flatMap {
             pagingDatePickerViewController($0 - 1.months)
         }
     }
 
-    public func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
+    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         return ((viewController as? PagingDatePickerViewController)?.date).flatMap {
             pagingDatePickerViewController($0 + 1.months)
         }
@@ -207,7 +207,7 @@ extension PagingDatePickerPageViewController: UIPageViewControllerDataSource {
 
 extension PagingDatePickerPageViewController: UIPageViewControllerDelegate {
 
-    public func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+    func pageViewController(pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         if let currentDate = currentDate where completed {
             pagingDatePickerViewDelegate?.pagingDatePickerViewControllerDidScrollToDate(currentDate)
         }
