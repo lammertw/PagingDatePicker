@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PagingDatePicker"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A calendar view date picker with paging."
   s.description      = <<-DESC
   This library consists of two components that can be used on it's own or together. 
