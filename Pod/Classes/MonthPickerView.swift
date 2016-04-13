@@ -449,6 +449,15 @@ public class MonthPickerCell: UICollectionViewCell {
         return label
     }()
 
+    public override var accessibilityLabel: String? {
+        set {
+            super.accessibilityLabel = newValue
+        }
+        get {
+            return super.accessibilityLabel ?? "\(monthLabel.text ?? "") \(subtitleLabel.text ?? "")"
+        }
+    }
+
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
@@ -466,6 +475,8 @@ public class MonthPickerCell: UICollectionViewCell {
         layer.shadowOffset = CGSizeZero
         layer.shadowOpacity = 0.25
         layer.shadowRadius = 0
+
+        isAccessibilityElement = true
     }
 
     public override func layoutSubviews() {
