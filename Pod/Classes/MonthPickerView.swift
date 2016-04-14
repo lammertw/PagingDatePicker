@@ -483,7 +483,7 @@ public class MonthPickerCell: UICollectionViewCell {
         monthLabel.sizeToFit()
         monthLabel.frame.origin = CGPoint(x: (CGRectGetWidth(bounds) - CGRectGetWidth(monthLabel.frame)) / 2, y: 12)
         subtitleLabel.sizeToFit()
-        subtitleLabel.frame.origin = CGPoint(x: (CGRectGetWidth(bounds) - CGRectGetWidth(subtitleLabel.frame)) / 2, y: 40)
+        subtitleLabel.frame.origin = CGPoint(x: (CGRectGetWidth(bounds) - CGRectGetWidth(subtitleLabel.frame)) / 2 + 3, y: 40)
 
         super.layoutSubviews()
     }
