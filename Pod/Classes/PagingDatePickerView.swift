@@ -137,8 +137,16 @@ class PagingDatePickerPageViewController: UIPageViewController {
         super.init(transitionStyle: style, navigationOrientation: navigationOrientation, options: options)
     }
 
-    var startDate: NSDate?
-    var endDate: NSDate?
+    var startDate: NSDate? {
+        didSet {
+            startDate = startDate?.startOf(.Month)
+        }
+    }
+    var endDate: NSDate? {
+        didSet {
+            endDate = endDate?.endOf(.Month)
+        }
+    }
 
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -153,7 +161,7 @@ class PagingDatePickerPageViewController: UIPageViewController {
     }
 
     private func pagingDatePickerViewController(date: NSDate) -> PagingDatePickerViewController? {
-        if startDate <= date && endDate == nil || endDate >= date {
+        if startDate <= date && (endDate == nil || endDate >= date) {
             let vc = PagingDatePickerViewController(date: date, datePickerViewClass: datePickerViewClass)
             vc.datePickerViewDelegate = datePickerViewDelegate
             vc.datePickerViewDataSource = datePickerViewDataSource
